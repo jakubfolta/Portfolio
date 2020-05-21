@@ -1,4 +1,10 @@
 import React from "react";
 import '../styles/sass/main.scss';
 
-export default () => <div>Hello my first portfolio!</div>
+const Portfolio = () => {
+  return (
+    <div>Hello my first portfolio!</div>
+  )
+}
+
+export default Portfolio;
