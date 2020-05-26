@@ -1,0 +1,34 @@
+.Menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: $color-white;
+  margin-left: auto;
+  margin-right: 5%;
+
+  &__icon {
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      display: inline-block;
+      width: 2.5rem;
+      height: .3rem;
+      background-color: black;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+
+    &::before { top: -.6rem; }
+    &::after { top: .6rem; }
+  }
+}

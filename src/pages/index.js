@@ -1,9 +1,12 @@
 import React from "react";
-import '../styles/sass/main.scss';
+
+import Layout from '../containers/Layout';
 
 const Portfolio = () => {
   return (
-    <div>Hello my first portfolio!</div>
+    <Layout>
+      <p>Hello my first portfolio!</p>
+    </Layout>
   )
 }
 

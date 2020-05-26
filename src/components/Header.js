@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Menu from './Menu';
+
 const Header = props => (
-  <header className="header">
-    
+  <header className="Header">
+    <Menu />
   </header>
 )
 
