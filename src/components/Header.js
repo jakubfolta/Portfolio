@@ -3,7 +3,8 @@ import React from 'react';
 import Menu from './Menu';
 
 const Header = props => (
-  <header className="Header">
+  <header className="header">
+    {props.children}
     <Menu />
   </header>
 )

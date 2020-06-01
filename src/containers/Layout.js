@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import '../styles/sass/main.scss';
 
-import Header from '../components/Header';
-
 class Layout extends Component {
   state = {
 
@@ -11,8 +9,7 @@ class Layout extends Component {
   render() {
     return (
       <Fragment>
-        <Header />
-        <main className="Layout">
+        <main className="layout">
           {this.props.children}
         </main>
       </Fragment>
