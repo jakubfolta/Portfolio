@@ -12,11 +12,11 @@ const SocialsList = () => (
       <FaFacebookSquare />
     </SocialsItem>
 
-    <SocialsItem link="#" color="#171515">
+    <SocialsItem link="#" color="#24292e">
       <FaGithubSquare />
     </SocialsItem>
 
-    <SocialsItem link="#" color="#0976B4">
+    <SocialsItem link="#" color="#0E76A8">
       <FaLinkedin />
     </SocialsItem>
 

@@ -2,12 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 4.4rem;
+  height: 4.4rem;
   border-radius: 50%;
   background-color: $color-white;
   margin-left: auto;
   margin-right: 5%;
+  animation: scaleUp 1s linear 1s;
+  animation-fill-mode: backwards;
 
   &__icon {
     position: relative;
@@ -16,8 +18,9 @@
     &::before,
     &::after {
       display: inline-block;
-      width: 2.5rem;
-      height: .3rem;
+      width: 3.5rem;
+      height: .4rem;
+      border-radius: 15px;
       background-color: black;
     }
 
@@ -28,7 +31,7 @@
       left: 0;
     }
 
-    &::before { top: -.6rem; }
-    &::after { top: .6rem; }
+    &::before { top: -1rem; }
+    &::after { top: 1rem; }
   }
 }
