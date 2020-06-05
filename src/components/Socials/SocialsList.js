@@ -23,31 +23,6 @@ const SocialsList = () => (
     <SocialsItem link="#" color="#125688">
       <FaInstagramSquare />
     </SocialsItem>
-
-    {/* <SocialsItem link="#" >
-      <IconContext.Provider value={{color: "#171515", className: "social-icon"}}>
-        <div className="social-icon__container">
-          <FaGithubSquare />
-        </div>
-      </IconContext.Provider>
-    </SocialsItem>
-
-    <SocialsItem link="#" >
-      <IconContext.Provider value={{color: "#0976B4", className: "social-icon"}}>
-        <div className="social-icon__container">
-          <FaLinkedin />
-        </div>
-      </IconContext.Provider>
-    </SocialsItem>
-
-    <SocialsItem link="#" >
-      <IconContext.Provider value={{color: "#125688", className: "social-icon"}}>
-        <div className="social-icon__container">
-          <FaInstagramSquare />
-        </div>
-      </IconContext.Provider>
-    </SocialsItem> */}
-
   </ul>
 )
 

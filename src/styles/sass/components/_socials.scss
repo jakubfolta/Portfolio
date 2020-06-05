@@ -3,6 +3,9 @@
   list-style: none;
   align-items: center;
   line-height: 0;
+  margin-left: 5%;
+  animation: moveInLeft 1s ease .75s;
+  animation-fill-mode: backwards;
 }
 
 .social-icon {
