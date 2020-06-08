@@ -36,3 +36,25 @@
     transform: scale(1);
   }
 }
+
+@keyframes appear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes jumpTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50vh);
+  }
+
+  70% {
+    opacity: .8;
+    transform: translateY(2vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

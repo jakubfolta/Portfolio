@@ -4,15 +4,9 @@ body {
 }
 
 .heading-primary {
-  margin-top: -9rem;
-  font-size: 4rem;
-  text-align: center;
-
-  span {
-    font-size: 3.5rem;
-  }
-}
-
-.heading-secondary {
-  font-size: 2rem;
+  color: $color-tertiary;
+  font-size: 2.5rem;
+  line-height: 1.7;
+  animation: jumpTop .5s ease-out 1s;
+  animation-fill-mode: backwards;
 }

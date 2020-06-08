@@ -5,3 +5,15 @@
   display: flex;
   align-items: center;
 }
+
+.header__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  color: $color-secondary--light;
+  line-height: 1.5;
+  animation: appear 2s ease .75s;
+  animation-fill-mode: backwards;
+}
