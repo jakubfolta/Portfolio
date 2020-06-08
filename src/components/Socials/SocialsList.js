@@ -8,6 +8,7 @@ import { FaInstagramSquare } from 'react-icons/fa';
 
 const SocialsList = () => (
   <Fragment>
+    <p className="followMe">Follow me</p>
     <ul className="socialsList">
       <SocialsItem link="https://www.facebook.com/jakub.folta.58/" color="#3B5998">
         <FaFacebookSquare />
@@ -26,7 +27,6 @@ const SocialsList = () => (
       </SocialsItem>
     </ul>
   </Fragment>
-
-)
+);
 
 export default SocialsList;

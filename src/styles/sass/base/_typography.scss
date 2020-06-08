@@ -1,11 +1,12 @@
 body {
+  font-family: 'architects daughter';
   font-size: $default-font-size;
   background-color: $color-secondary;
 }
 
 .heading-primary {
   color: $color-tertiary;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 1.7;
   animation: jumpTop .5s ease-out 1s;
   animation-fill-mode: backwards;

@@ -6,6 +6,6 @@ const Menu = props => {
       <span className="menu__icon">&nbsp;</span>
     </div>
   )
-}
+};
 
 export default Menu;

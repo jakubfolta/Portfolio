@@ -7,6 +7,6 @@ const Header = props => (
     {props.children}
     <Menu />
   </header>
-)
+);
 
 export default Header;

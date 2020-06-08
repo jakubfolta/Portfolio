@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
+
 import '../styles/sass/main.scss';
+import 'typeface-architects-daughter';
 
 class Layout extends Component {
   state = {
@@ -15,6 +17,6 @@ class Layout extends Component {
       </Fragment>
     )
   }
-}
+};
 
 export default Layout;

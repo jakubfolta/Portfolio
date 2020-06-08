@@ -10,6 +10,6 @@ const SocialsItem = props => (
       </IconContext.Provider>
     </a>
   </li>
-)
+);
 
 export default SocialsItem;

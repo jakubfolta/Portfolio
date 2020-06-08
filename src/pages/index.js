@@ -3,10 +3,12 @@ import React from "react";
 import Layout from '../containers/Layout';
 import Header from '../components/Header';
 import SocialsList from '../components/Socials/SocialsList';
+import Logo from '../components/Logo';
 
 const Portfolio = () => {
   return (
     <Layout>
+      <Logo />
       <Header>
         <SocialsList />
       </Header>
@@ -17,6 +19,6 @@ const Portfolio = () => {
       </div>
     </Layout>
   )
-}
+};
 
 export default Portfolio;

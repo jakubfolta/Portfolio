@@ -1,4 +1,5 @@
 .socialsList {
+  position: relative;
   display: flex;
   list-style: none;
   align-items: center;
@@ -10,4 +11,14 @@
 }
 
 .social-icon { font-size: 5rem; }
+
+.followMe {
+  position: absolute;
+  top: -2.2rem;
+  left: 5%;
+  font-size: $small-font-size;
+  color: $color-secondary--light;
+  animation: moveInLeft 1s ease .75s;
+  animation-fill-mode: backwards;
+}
 
