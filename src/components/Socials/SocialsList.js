@@ -8,19 +8,19 @@ import { FaInstagramSquare } from 'react-icons/fa';
 
 const SocialsList = () => (
   <ul className="socialsList">
-    <SocialsItem link="#" color="#3B5998">
+    <SocialsItem link="https://www.facebook.com/jakub.folta.58/" color="#3B5998">
       <FaFacebookSquare />
     </SocialsItem>
 
-    <SocialsItem link="#" color="#24292e">
+    <SocialsItem link="https://github.com/jakubfolta" color="#24292e">
       <FaGithubSquare />
     </SocialsItem>
 
-    <SocialsItem link="#" color="#0E76A8">
+    <SocialsItem link="https://www.linkedin.com/in/jakubfolta/" color="#0E76A8">
       <FaLinkedin />
     </SocialsItem>
 
-    <SocialsItem link="#" color="#125688">
+    <SocialsItem link="https://www.instagram.com/jakub.folta/" color="#125688">
       <FaInstagramSquare />
     </SocialsItem>
   </ul>
