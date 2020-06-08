@@ -10,10 +10,11 @@ const Portfolio = () => {
       <Header>
         <SocialsList />
       </Header>
-      <h1 className="heading-primary">Hello, <br /> <span>Welcome to my haven!</span></h1>
-      <h2 className="heading-secondary">My name is Jakub Folta.</h2>
-      <h2 className="heading-secondary">I am Front End Developer.</h2>
-      <h2 className="heading-secondary">Take a look at my <span>web portfolio page</span>.</h2>
+      <div className="header__text-box">
+        <h1 className="heading-primary">Hello, my name is Jakub Folta.</h1>
+        <p className="heading-secondary">I am Front End Developer.</p>
+        <p className="heading-secondary">Take a look at my <span>web portfolio page</span>.</p>
+      </div>
 
     </Layout>
   )

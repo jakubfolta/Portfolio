@@ -4,11 +4,10 @@
   align-items: center;
   line-height: 0;
   margin-left: 5%;
+  background-color: $color-white;
   animation: moveInLeft 1s ease .75s;
   animation-fill-mode: backwards;
 }
 
-.social-icon {
-  font-size: 4.4rem;
-}
+.social-icon { font-size: 5rem; }
 
