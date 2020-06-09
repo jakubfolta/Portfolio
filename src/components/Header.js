@@ -5,7 +5,9 @@ import Menu from './Menu';
 const Header = props => (
   <header className="header">
     {props.children}
-    <Menu clicked={props.clicked}/>
+    <Menu
+      show={props.show} 
+      clicked={props.clicked}/>
   </header>
 );
 
