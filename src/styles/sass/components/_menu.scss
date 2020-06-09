@@ -11,20 +11,12 @@
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
 
-  &:hover {
-
-  }
-
-  &:hover .menu::before{
-    
-  }
-
-  &:hover {
-
-  }
+  &:hover &__icon { transform: scale(1.2); }
+  &:hover &__icon::before { transform: translateX(-1rem); }
+  &:hover &__icon::after { transform: translateX(1rem); }
 
   &__icon {
-    position: relative;
+    position: absolute;
 
     &,
     &::before,
@@ -34,6 +26,7 @@
       height: .5rem;
       border-radius: 15px;
       background-color: $color-primary;
+      transition: all .5s;
     }
 
     &::before,
@@ -46,4 +39,8 @@
     &::before { top: -1.3rem; }
     &::after { top: 1.3rem; }
   }
+}
+
+.clicked {
+  
 }
