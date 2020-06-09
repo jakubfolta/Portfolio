@@ -58,3 +58,7 @@
     transform: translate(0);
   }
 }
+
+@keyframes rotateRight {
+  100% { transform: rotate(135deg); }
+}

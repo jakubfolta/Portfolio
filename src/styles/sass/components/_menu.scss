@@ -17,7 +17,7 @@
   &:hover &__icon::after { transform: translateX(1rem); }
 
   &__icon {
-    position: absolute;
+    position: relative;
 
     &,
     &::before,
@@ -27,7 +27,7 @@
       height: .5rem;
       border-radius: 15px;
       background-color: $color-primary;
-      transition: all .5s;
+      transition: all .5s ease;
     }
 
     &::before,
@@ -42,6 +42,17 @@
   }
 }
 
-.clicked {
+.clicked .menu__icon {
+  background-color: transparent;
+}
 
+.clicked:hover .menu__icon {
+  transform: scale(1);
+}
+
+.clicked .menu__icon::before,
+.clicked:hover .menu__icon::before, {
+  top: 0;
+  transform: translate(0);
+  animation: rotateRight .5s forwards 1s;
 }
