@@ -7,9 +7,21 @@
   border-radius: 50%;
   margin-left: auto;
   margin-right: 5%;
-  
+
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
+
+  &:hover {
+
+  }
+
+  &:hover .menu::before{
+    
+  }
+
+  &:hover {
+
+  }
 
   &__icon {
     position: relative;
