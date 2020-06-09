@@ -7,6 +7,7 @@
   border-radius: 50%;
   margin-left: auto;
   margin-right: 5%;
+  cursor: pointer;
 
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
@@ -42,5 +43,5 @@
 }
 
 .clicked {
-  
+
 }
