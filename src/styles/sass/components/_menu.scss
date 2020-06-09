@@ -12,7 +12,6 @@
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
 
-  &:hover &__icon { transform: scale(1.2); }
   &:hover &__icon::before { transform: translateX(-1rem); }
   &:hover &__icon::after { transform: translateX(1rem); }
 
@@ -46,13 +45,16 @@
   background-color: transparent;
 }
 
-.clicked:hover .menu__icon {
-  transform: scale(1);
+.clicked .menu__icon::before,
+.clicked:hover .menu__icon::before,
+.clicked .menu__icon::after,
+.clicked:hover .menu__icon::after {
+  top: 0;
+  transform: translate(0);
 }
 
 .clicked .menu__icon::before,
-.clicked:hover .menu__icon::before, {
-  top: 0;
-  transform: translate(0);
-  animation: rotateRight .5s forwards 1s;
-}
+.clicked:hover .menu__icon::before, { animation: rotateRight 1s forwards .5s; }
+
+.clicked .menu__icon::after,
+.clicked:hover .menu__icon::after, { animation: rotateRight2 1s forwards .5s; }

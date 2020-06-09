@@ -60,5 +60,11 @@
 }
 
 @keyframes rotateRight {
-  100% { transform: rotate(135deg); }
+  0% { transform: rotate(0); }
+  100% { transform: rotate(315deg); }
+}
+
+@keyframes rotateRight2 {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(405deg); }
 }
