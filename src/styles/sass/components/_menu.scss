@@ -1,13 +1,15 @@
 .menu {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: 5%;
   cursor: pointer;
+  z-index: 200;
 
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
@@ -17,15 +19,18 @@
 
   &__icon {
     position: relative;
+    z-index: 200;
 
     &,
     &::before,
     &::after {
+      position: relative;
       display: inline-block;
       width: 3rem;
       height: .5rem;
       border-radius: 15px;
       background-color: $color-primary;
+      z-index: 500;
       transition: all .5s ease;
     }
 
@@ -34,6 +39,7 @@
       content: '';
       position: absolute;
       left: 0;
+      z-index: 500;
     }
 
     &::before { top: -1.3rem; }
@@ -49,6 +55,7 @@
 .clicked:hover .menu__icon::after {
   top: 0;
   transform: translate(0);
+  z-index: 300;
 }
 
 .clicked .menu__icon::before,

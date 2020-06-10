@@ -5,6 +5,7 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(43, 43, 42, .95);
-  animation: backdrop .5s;
+  animation: backdrop 1s 1s;
+  animation-fill-mode: backwards;
   z-index: 100;
 }
