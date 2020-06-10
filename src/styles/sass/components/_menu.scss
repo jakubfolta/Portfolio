@@ -41,9 +41,7 @@
   }
 }
 
-.clicked .menu__icon {
-  background-color: transparent;
-}
+.clicked .menu__icon { background-color: transparent; }
 
 .clicked .menu__icon::before,
 .clicked:hover .menu__icon::before,
