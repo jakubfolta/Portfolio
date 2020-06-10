@@ -4,6 +4,7 @@ import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
 import Header from '../components/Header';
 import SocialsList from '../components/Socials/SocialsList';
+import Backdrop from '../components/Backdrop';
 
 class HomeIndex extends Component {
   state = {
@@ -19,6 +20,7 @@ class HomeIndex extends Component {
   render() {
     return (
       <Layout>
+        <Backdrop show={this.state.menuClicked} />
         <Logo />
         <Header
           show={this.state.menuClicked}
