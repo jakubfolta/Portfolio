@@ -4,9 +4,9 @@ const Menu = props => {
   let classes = props.show ? ['menu', 'clicked'] : ['menu'];
 
   return (
-    <div className={classes.join(' ')} onClick={props.clicked}>
+    <button className={classes.join(' ')} onClick={props.clicked}>
       <span className="menu__icon">&nbsp;</span>
-    </div>
+    </button>
   )
 };
 

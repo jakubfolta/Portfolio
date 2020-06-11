@@ -7,15 +7,20 @@
   align-items: center;
   width: 5rem;
   height: 5rem;
+  border: none;
   border-radius: 50%;
+  background-color: transparent;
   cursor: pointer;
   z-index: 200;
+  outline: none;
 
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
 
-  &:hover &__icon::before { transform: translateX(-1rem); }
-  &:hover &__icon::after { transform: translateX(1rem); }
+  @media only screen and (hover: hover) {
+    &:hover &__icon::before { transform: translateX(-1rem); }
+    &:hover &__icon::after { transform: translateX(1rem); }
+  }
 
   &__icon {
     position: relative;
