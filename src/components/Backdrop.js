@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Backdrop = props => {
-  let classes = ['backdrop'];
+  const classes = ['backdrop'];
 
   if (props.show) {
     classes.push('show');
