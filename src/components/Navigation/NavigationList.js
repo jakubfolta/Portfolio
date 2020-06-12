@@ -10,6 +10,6 @@ const NavigationList = () => (
       <NavigationItem link="/contact">Contact</NavigationItem>
     </ul>
   </nav>
-)
+);
 
 export default NavigationList;
