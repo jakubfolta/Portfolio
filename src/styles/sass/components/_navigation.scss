@@ -20,6 +20,10 @@
     font-size: $huge-font-size;
     letter-spacing: .3rem;
     text-align: center;
+
+    &--1 {}
+    &--2 {}
+    &--3 {}
   }
 
   &__link:link,
@@ -27,5 +31,6 @@
     display: block;
     text-decoration: none;
     color: $color-primary;
+    padding: 1rem 0;
   }
 }
