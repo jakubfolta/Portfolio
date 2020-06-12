@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Menu from '../components/Menu';
 import SocialsList from '../components/Socials/SocialsList';
 import Backdrop from '../components/Backdrop';
+import NavigationList from '../components/Navigation/NavigationList';
 
 class HomeIndex extends Component {
   state = {
@@ -22,6 +23,7 @@ class HomeIndex extends Component {
     return (
       <Layout>
         <Backdrop show={this.state.menuClicked} />
+        <NavigationList />
         <Logo />
         <main className="header__box">
           <h1 className="heading-primary">Hello, my name is Jakub Folta.</h1>
