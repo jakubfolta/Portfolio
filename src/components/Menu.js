@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Menu = props => {
-  let classes = props.show ? ['menu', 'clicked'] : ['menu'];
+  const classes = ['menu'];
+
+  if (props.show) {
+    classes.push('clicked')
+  }
 
   return (
     <button className={classes.join(' ')} onClick={props.clicked}>
