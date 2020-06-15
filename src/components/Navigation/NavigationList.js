@@ -3,10 +3,14 @@ import React from 'react';
 import NavigationItem from './NavigationItem';
 
 const NavigationList = props => {
-  const navigation = ['navigation']
+  const classes = ['navigation'];
+
+  if (props.show) {
+    classes.push('show');
+  }
 
   return (
-    <nav className={navigation.join(' ')}>
+    <nav className={classes.join(' ')}>
       <ul className="navigation__list">
         <NavigationItem link="/about">About me</NavigationItem>
         <NavigationItem link="/portfolio">Portfolio</NavigationItem>

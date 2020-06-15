@@ -23,7 +23,7 @@ class HomeIndex extends Component {
     return (
       <Layout>
         <Backdrop show={this.state.menuClicked} />
-        <NavigationList />
+        <NavigationList show={this.state.menuClicked} />
         <Logo />
         <main className="header__box">
           <h1 className="heading-primary">Hello, my name is Jakub Folta.</h1>
