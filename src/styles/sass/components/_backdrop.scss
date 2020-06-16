@@ -7,7 +7,7 @@
   background-color: rgba(43, 43, 42, .95);
   z-index: 100;
   transform: translateY(-100%);
-  transition: transform cubic-bezier(.44,1.9,.48,.4) 1s .5s;
+  transition: transform cubic-bezier(.44,1.9,.48,.4) 1s;
 }
 
 .show { transform: translate(0);}

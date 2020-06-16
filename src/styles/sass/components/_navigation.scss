@@ -9,7 +9,7 @@
   visibility: hidden;
   z-index: 150;
   overflow: hidden;
-  transition: all 4s;
+  transition: all 2s;
 
   &__list {
     list-style: none;
@@ -23,19 +23,19 @@
     letter-spacing: .3rem;
     text-align: center;
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       transform: translateX(-100%);
-      transition: transform cubic-bezier(.57,1.69,.41,.71) 1s .3s;
+      transition: transform cubic-bezier(.57,1.69,.41,.71) .5s;
     }
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       transform: translateX(100%);
-      transition: transform cubic-bezier(.57,1.69,.41,.71) 1s .3s;
+      transition: transform cubic-bezier(.57,1.69,.41,.71) .6s;
     }
 
     &:last-child {
-      transform: translateY(-700%);
-      transition: transform cubic-bezier(.57,1.69,.41,.71) 1s .2s;
+      transform: translateX(-100%);
+      transition: transform cubic-bezier(.57,1.69,.41,.71) .7s;
     }
   }
 
