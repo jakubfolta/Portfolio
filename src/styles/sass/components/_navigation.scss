@@ -7,9 +7,9 @@
   transform: translateY(-50%);
   width: 100%;
   visibility: hidden;
-  opacity: 0;
   z-index: 150;
-  transition: all 1s;
+  overflow: hidden;
+  transition: all 4s;
 
   &__list {
     list-style: none;
@@ -22,8 +22,21 @@
     font-size: $huge-font-size;
     letter-spacing: .3rem;
     text-align: center;
-    transform: translateY(-600%);
-    transition: all 1s;
+
+    &:nth-child(even) {
+      transform: translateX(-100%);
+      transition: transform cubic-bezier(.57,1.69,.41,.71) 1s .3s;
+    }
+
+    &:nth-child(odd) {
+      transform: translateX(100%);
+      transition: transform cubic-bezier(.57,1.69,.41,.71) 1s .3s;
+    }
+
+    &:last-child {
+      transform: translateY(-700%);
+      transition: transform cubic-bezier(.57,1.69,.41,.71) 1s .2s;
+    }
   }
 
   &__link:link,
@@ -35,9 +48,5 @@
   }
 }
 
-.show {
-  visibility: visible;
-  opacity: 1;
-}
-
+.show { visibility: visible; }
 .navigation.show .navigation__item { transform: translate(0);}
