@@ -13,7 +13,7 @@ class HomeIndex extends Component {
     menuClicked: false
   }
 
-  menuClickedHandler = () => {
+  navVisibilityHandler = () => {
     this.setState(prevState => {
       return {menuClicked: !prevState.menuClicked}
     });
@@ -22,7 +22,9 @@ class HomeIndex extends Component {
   render() {
     return (
       <Layout>
-        <Backdrop show={this.state.menuClicked} />
+        <Backdrop
+          show={this.state.menuClicked}
+          clicked={this.navVisibilityHandler} />
         <NavigationList show={this.state.menuClicked} />
         <Logo />
         <main className="header__box">
@@ -35,7 +37,7 @@ class HomeIndex extends Component {
         </Header>
         <Menu
           show={this.state.menuClicked}
-          clicked={this.menuClickedHandler} />
+          clicked={this.navVisibilityHandler} />
       </Layout>
     )
   }

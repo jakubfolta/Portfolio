@@ -8,7 +8,7 @@ const Backdrop = props => {
   }
 
   return (
-    <div className={classes.join(' ')}></div>
+    <div onClick={props.clicked} className={classes.join(' ')}></div>
   )
 };
 
