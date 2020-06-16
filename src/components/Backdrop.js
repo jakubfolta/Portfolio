@@ -4,7 +4,7 @@ const Backdrop = props => {
   const classes = ['backdrop'];
 
   if (props.show) {
-    classes.push('show');
+    classes.push('showBackdrop');
   }
 
   return (

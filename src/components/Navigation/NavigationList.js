@@ -6,7 +6,7 @@ const NavigationList = props => {
   const classes = ['navigation'];
 
   if (props.show) {
-    classes.push('show');
+    classes.push('showNav');
   }
 
   return (
