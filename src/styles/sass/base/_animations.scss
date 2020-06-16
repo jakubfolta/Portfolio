@@ -68,3 +68,9 @@
   0% { transform: rotate(0); }
   100% { transform: rotate(405deg); }
 }
+
+@keyframes moveInTop {
+  0% {  transform: translateY(-700%); }
+  60% { transform: translateY(100%); }
+  100% {  transform: translate(0); }
+}

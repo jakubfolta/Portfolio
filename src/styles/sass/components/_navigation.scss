@@ -7,8 +7,8 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  visibility: hidden;
-  opacity: 0;
+  // visibility: hidden;
+  // opacity: 0;
   z-index: 150;
   transition: all .8s;
 
@@ -23,6 +23,9 @@
     font-size: $huge-font-size;
     letter-spacing: .3rem;
     text-align: center;
+    // transform: translateY(-70vh);
+    animation: moveInTop 1s .5s;
+    animation-fill-mode: backwards;
 
     &--1 {}
     &--2 {}
