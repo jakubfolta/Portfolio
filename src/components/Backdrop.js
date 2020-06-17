@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CSSTransition from 'react-transition-group/CSSTransition';
+
 const Backdrop = props => {
   const classes = ['backdrop'];
 
@@ -7,8 +9,19 @@ const Backdrop = props => {
     classes.push('showBackdrop');
   }
 
+  const animationTiming = {
+    enter: 1000,
+    exit: 2100
+  }
+
   return (
-    <div onClick={props.clicked} className={classes.join(' ')}></div>
+    <CSSTransition
+      mountOnEnter
+      unmountOnExit
+      in={props.show}
+      timeout={animationTiming} >
+      <div onClick={props.clicked} className={classes.join(' ')}></div>
+    </CSSTransition>
   )
 };
 
