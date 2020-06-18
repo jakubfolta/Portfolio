@@ -5,7 +5,7 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 const Backdrop = props => {
   const animationTiming = {
     enter: 1000,
-    exit: 2100
+    exit: 1900
   }
 
   return (

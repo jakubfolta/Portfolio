@@ -4,7 +4,9 @@ const Menu = props => {
   const classes = ['menu'];
 
   if (props.show) {
-    classes.push('clicked')
+    classes.push('clicked');
+  } else {
+    classes.push('unClicked');
   }
 
   return (

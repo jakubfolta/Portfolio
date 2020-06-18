@@ -68,3 +68,13 @@
   0% { transform: rotate(0); }
   100% { transform: rotate(405deg); }
 }
+
+@keyframes rotateLeft {
+  0% { transform: rotate(315deg); }
+  100% { transform: rotate(0); }
+}
+
+@keyframes rotateLeft2 {
+  0% { transform: rotate(405deg); }
+  100% { transform: rotate(0); }
+}
