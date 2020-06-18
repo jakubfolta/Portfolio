@@ -10,7 +10,7 @@
   transition: transform cubic-bezier(.44,1.9,.48,.4) 1s 1.1s;
 }
 
-.backdrop.showBackdrop {
+.showBackdrop {
   transform: translateY(0);
   transition: transform cubic-bezier(.44,1.9,.48,.4) 1s;
 }
