@@ -12,11 +12,11 @@ const NavigationList = props => {
 
   return (
     <nav className={classes.join(' ')}>
-      <ul className="navigation__list">
+      <TransitionGroup component="ul" className="navigation__list">
         <NavigationItem link="/about">About me</NavigationItem>
         <NavigationItem link="/portfolio">Portfolio</NavigationItem>
         <NavigationItem link="/contact">Contact</NavigationItem>
-      </ul>
+      </TransitionGroup>
     </nav>
   )
 };
