@@ -17,23 +17,18 @@
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
 
-  @media only screen and (hover: hover) {
-    &:hover &__icon::before { transform: translateX(-1rem); }
-    &:hover &__icon::after { transform: translateX(1rem); }
-  }
-
   &__icon {
+    position: relative;
 
     &,
     &::before,
     &::after {
-      position: relative;
       display: inline-block;
       width: 3rem;
       height: .5rem;
       border-radius: 15px;
       background-color: $color-primary;
-      transition: all .5s ease, top .5s 1.5s;
+      transition: all .5s, top .5s 1s;
     }
 
     &::before,
@@ -49,14 +44,10 @@
 }
 
 .clicked .menu__icon { background-color: transparent; }
-.unclicked .menu__icon {
-  transition: background-color .5s 1s;
- }
+.unclicked .menu__icon { transition: background-color .3s 1s; }
 
 .clicked .menu__icon::before,
-.clicked:hover .menu__icon::before,
-.clicked .menu__icon::after,
-.clicked:hover .menu__icon::after {
+.clicked .menu__icon::after {
   top: 0;
   transform: translate(0);
   transition: all .5s;
@@ -65,5 +56,5 @@
 .clicked .menu__icon::before { animation: rotateRight 1s forwards .5s; }
 .clicked .menu__icon::after { animation: rotateRight2 1s forwards .5s; }
 
-.unclicked .menu__icon::before { animation: rotateLeft 1s forwards ; }
-.unclicked .menu__icon::after { animation: rotateLeft2 1s forwards ; }
+.unclicked .menu__icon::before { animation: rotateLeft 1s; }
+.unclicked .menu__icon::after { animation: rotateLeft2 1s; }

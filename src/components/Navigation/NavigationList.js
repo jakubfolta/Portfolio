@@ -1,5 +1,6 @@
 import React from 'react';
 
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 import NavigationItem from './NavigationItem';
 
 const NavigationList = props => {
