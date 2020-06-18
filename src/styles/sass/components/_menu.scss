@@ -33,7 +33,7 @@
       height: .5rem;
       border-radius: 15px;
       background-color: $color-primary;
-      transition: all .5s ease, top .5s 1.5s, transform .5s 1.5s;
+      transition: all .5s ease, top .5s 1.5s;
     }
 
     &::before,
@@ -49,6 +49,9 @@
 }
 
 .clicked .menu__icon { background-color: transparent; }
+.unclicked .menu__icon {
+  transition: background-color .5s 1s;
+ }
 
 .clicked .menu__icon::before,
 .clicked:hover .menu__icon::before,
@@ -62,8 +65,5 @@
 .clicked .menu__icon::before { animation: rotateRight 1s forwards .5s; }
 .clicked .menu__icon::after { animation: rotateRight2 1s forwards .5s; }
 
-// .unClicked .menu__icon::before,
-// .unClicked:hover .menu__icon::before { animation: rotateLeft 1s .5s; }
-//
-// .unClicked .menu__icon::after,
-// .unClicked:hover .menu__icon::after { animation: rotateLeft2 1s .5s; }
+.unclicked .menu__icon::before { animation: rotateLeft 1s forwards ; }
+.unclicked .menu__icon::after { animation: rotateLeft2 1s forwards ; }

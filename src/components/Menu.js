@@ -5,10 +5,9 @@ const Menu = props => {
 
   if (props.show) {
     classes.push('clicked');
+  } else {
+    classes.push('unclicked');
   }
-  // else {
-  //   classes.push('unClicked');
-  // }
 
   return (
     <button className={classes.join(' ')} onClick={props.clicked}>
