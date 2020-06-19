@@ -16,6 +16,7 @@ const NavigationList = props => {
       in={props.show}
       timeout={animationTiming}
       classNames={{
+        enterActive: 'showNav',
         enterDone: 'showNav',
         exitActive: 'navigation'
       }} >

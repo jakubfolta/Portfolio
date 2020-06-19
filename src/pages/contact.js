@@ -5,7 +5,7 @@ import Menu from '../components/Menu';
 import Backdrop from '../components/Backdrop';
 import NavigationList from '../components/Navigation/NavigationList';
 
-class About extends Component {
+class Contact extends Component {
   state = {
     menuClicked: false
   }
@@ -24,7 +24,7 @@ class About extends Component {
           clicked={this.navVisibilityHandler} />
         <NavigationList show={this.state.menuClicked} />
         <main className="header__box">
-          <h1 className="heading-primary">Father, coder, writer, lifetime student of personal development.</h1>
+          <h1 className="heading-primary">Feel free to send me a message.</h1>
             <p className="header__text">I am Front End Developer.</p>
             <p className="header__text">Take a look at my <span>web portfolio page</span>.</p>
         </main>
@@ -36,4 +36,4 @@ class About extends Component {
   }
 };
 
-export default About;
+export default Contact;
