@@ -5,8 +5,8 @@ import NavigationItem from './NavigationItem';
 
 const NavigationList = props => {
   const animationTiming = {
-    enter: 1000,
-    exit: 2000
+    enter: 100,
+    exit: 1500
   }
 
   return (
@@ -16,7 +16,6 @@ const NavigationList = props => {
       in={props.show}
       timeout={animationTiming}
       classNames={{
-        enterActive: 'showNav',
         enterDone: 'showNav',
         exitActive: 'navigation'
       }} >

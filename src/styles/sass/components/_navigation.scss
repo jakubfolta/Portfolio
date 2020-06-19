@@ -6,7 +6,6 @@
   justify-content: center;
   transform: translateY(-50%);
   width: 100%;
-  visibility: hidden;
   z-index: 150;
   overflow: hidden;
   transition: all 2s;
@@ -26,7 +25,6 @@
 
     &:nth-child(odd),
     &:last-child { transform: translateX(-100%); }
-
     &:nth-child(odd) { transition-delay: .9s; }
 
     &:nth-child(even) {
@@ -45,8 +43,6 @@
     padding: 1rem 0;
   }
 }
-
-.showNav { visibility: visible; }
 
 .navigation.showNav .navigation__item {
   transform: translate(0);

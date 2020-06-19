@@ -49,8 +49,7 @@
 .clicked .menu__icon::before,
 .clicked .menu__icon::after {
   top: 0;
-  transform: translate(0);
-  transition: all .5s;
+  transition: top .5s;
 }
 
 .clicked .menu__icon::before { animation: rotateRight 1s forwards .5s; }
