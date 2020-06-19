@@ -16,8 +16,7 @@ const Backdrop = props => {
       timeout={animationTiming}
       classNames={{
         enterActive: 'showBackdrop',
-        enterDone: 'showBackdrop',
-        exitActive: 'backdrop'
+        enterDone: 'showBackdrop'
       }}>
       <div onClick={props.clicked} className="backdrop"></div>
     </CSSTransition>
