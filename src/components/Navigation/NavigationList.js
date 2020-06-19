@@ -1,23 +1,33 @@
 import React from 'react';
 
-import TransitionGroup from 'react-transition-group/TransitionGroup';
+import CSSTransition from 'react-transition-group/CSSTransition';
 import NavigationItem from './NavigationItem';
 
 const NavigationList = props => {
-  const classes = ['navigation'];
-
-  if (props.show) {
-    classes.push('showNav');
+  const animationTiming = {
+    enter: 1000,
+    exit: 2000
   }
 
   return (
-    <nav className={classes.join(' ')}>
-      <TransitionGroup component="ul" className="navigation__list">
-        <NavigationItem link="/about">About me</NavigationItem>
-        <NavigationItem link="/portfolio">Portfolio</NavigationItem>
-        <NavigationItem link="/contact">Contact</NavigationItem>
-      </TransitionGroup>
-    </nav>
+    <CSSTransition
+      mountOnEnter
+      unmountOnExit
+      in={props.show}
+      timeout={animationTiming}
+      classNames={{
+        enterActive: 'showNav',
+        enterDone: 'showNav',
+        exitActive: 'navigation'
+      }} >
+      <nav className="navigation">
+        <ul className="navigation__list">
+          <NavigationItem link="/about">About me</NavigationItem>
+          <NavigationItem link="/portfolio">Portfolio</NavigationItem>
+          <NavigationItem link="/contact">Contact</NavigationItem>
+        </ul>
+      </nav>
+    </CSSTransition>
   )
 };
 
