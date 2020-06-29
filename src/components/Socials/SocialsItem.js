@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IconContext } from "react-icons";
+import { IconContext } from 'react-icons';
 
 const SocialsItem = props => (
   <li className="socialsList__item">
