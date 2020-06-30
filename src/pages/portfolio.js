@@ -4,6 +4,7 @@ import Layout from '../containers/Layout';
 import Menu from '../components/Menu';
 import Backdrop from '../components/Backdrop';
 import NavigationList from '../components/Navigation/NavigationList';
+import ProjectsList from '../components/Projects/ProjectsList';
 
 class Portfolio extends Component {
   state = {
@@ -31,6 +32,7 @@ class Portfolio extends Component {
         <Menu
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
+        <ProjectsList />
       </Layout>
     )
   }
