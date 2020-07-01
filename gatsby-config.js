@@ -1,10 +1,15 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    projects: [
+      {
+        title: 'ferwfre45v',
+        description: 'loremsdsfrei vff fgffvfd frevd'
+      },
+      {
+        title: 'ffrevvvvhhg',
+        description: 'fdsfrfrev vvrb ergvfer erfc33regh54 rewdc w2 cr3e cre refd'
+      }
+    ]
+  },
   plugins: [`gatsby-plugin-sass`],
 }
