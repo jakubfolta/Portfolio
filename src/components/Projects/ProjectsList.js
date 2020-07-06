@@ -11,7 +11,8 @@ const ProjectsList = () => {
           siteMetadata {
             projects {
               title,
-              description
+              description,
+              technologies
             }
           }
         }
@@ -23,7 +24,8 @@ const ProjectsList = () => {
     <ProjectItem
      key={i}
      title={project.title}
-     description={project.description} /> )
+     description={project.description}
+     technologies={project.technologies} /> )
 
   return (
     <ul className="projects__list">

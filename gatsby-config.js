@@ -3,11 +3,13 @@ module.exports = {
     projects: [
       {
         title: 'ferwfre45v',
-        description: 'loremsdsfrei vff fgffvfd frevd'
+        description: 'loremsdsfrei vff fgffvfd frevd',
+        technologies: ['React', 'Gatsby']
       },
       {
         title: 'ffrevvvvhhg',
-        description: 'fdsfrfrev vvrb ergvfer erfc33regh54 rewdc w2 cr3e cre refd'
+        description: 'fdsfrfrev vvrb ergvfer erfc33regh54 rewdc w2 cr3e cre refd',
+        technologies: ['React', 'Gatsby']
       }
     ]
   },

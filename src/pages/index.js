@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { Link } from 'gatsby';
 import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
 import Header from '../components/Header';
@@ -29,8 +30,8 @@ class HomeIndex extends Component {
         <Logo />
         <main className="header__box">
           <h1 className="heading-primary">Hello, my name is Jakub Folta.</h1>
-            <p className="header__text">I am Front End Developer.</p>
-            <p className="header__text">Take a look at my <span>web portfolio page</span>.</p>
+          <p className="header__text">I am passionate Front End Developer based in London.</p>
+          <p className="header__text">Take a look at my <Link to="/portfolio" className="header__link">web portfolio page</Link> or send me an <a className="header__link" href="mailto:jakubfolta@yahoo.co.uk">email</a>.</p>
         </main>
         <Header>
           <SocialsList />
