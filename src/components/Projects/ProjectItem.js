@@ -11,7 +11,7 @@ const ProjectItem = props => (
       <p className="projects__description-text">{props.description}</p>
     </div>
 
-    <p className="projects__technologies">{props.technologies}</p>
+    <p className="projects__technologies">{props.technologies.join(' - ')}</p>
 
     <div></div>
   </li>
