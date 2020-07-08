@@ -11,12 +11,18 @@ const ProjectsList = () => {
           edges {
             node {
               id
+              excerpt
               frontmatter {
                 title
-                description
                 technologies
+                image {
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
-              excerpt
             }
           }
         }

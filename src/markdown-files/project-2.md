@@ -1,6 +1,6 @@
 ---
-title: 'ffrevvvvhhg'
-description: 'fdsfrfrev vvrb ergvfer erfc33regh54 rewdc w2 cr3e cre refd'
+title: 'Yatsu'
+image: 'images/yatsu.png'
 technologies: ['React', 'Gatsbygdfggd']
 ---
 loremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevd
