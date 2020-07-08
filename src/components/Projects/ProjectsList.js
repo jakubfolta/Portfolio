@@ -27,9 +27,9 @@ const ProjectsList = () => {
   const projects = data.allMarkdownRemark.edges.map( (project, i) =>
     <ProjectItem
      key={i}
-     title={project.title}
-     description={project.description}
-     technologies={project.technologies} /> )
+     title={project.node.frontmatter.title}
+     description={project.node.frontmatter.description}
+     technologies={project.node.frontmatter.technologies} /> )
 
   return (
     <ul className="projects__list">
