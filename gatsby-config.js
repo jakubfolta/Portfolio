@@ -2,6 +2,9 @@ module.exports = {
   siteMetadata: {},
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -9,6 +12,5 @@ module.exports = {
         path: `${__dirname}/src/markdown-files`
       },
     },
-    `gatsby-transformer-remark`
   ]
 }

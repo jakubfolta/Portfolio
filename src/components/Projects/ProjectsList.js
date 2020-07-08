@@ -24,11 +24,11 @@ const ProjectsList = () => {
     `
   );
 
-  const projects = data.allMarkdownRemark.edges.map( (project, i) =>
+  const projects = data.allMarkdownRemark.edges.map(project =>
     <ProjectItem
-     key={i}
+     key={project.node.id}
      title={project.node.frontmatter.title}
-     description={project.node.frontmatter.description}
+     description={project.node.excerpt}
      technologies={project.node.frontmatter.technologies} /> )
 
   return (
