@@ -6,13 +6,17 @@ import ProjectItem from './ProjectItem';
 const ProjectsList = () => {
   const data = useStaticQuery(
     graphql`
-      query {
-        site {
-          siteMetadata {
-            projects {
-              title,
-              description,
-              technologies
+      query ProjectsQuery {
+        allMarkdownRemark {
+          edges {
+            node {
+              id
+              frontmatter {
+                title
+                description
+                technologies
+              }
+              excerpt
             }
           }
         }
@@ -20,7 +24,7 @@ const ProjectsList = () => {
     `
   );
 
-  const projects = data.site.siteMetadata.projects.map( (project, i) =>
+  const projects = data.allMarkdownRemark.edges.map( (project, i) =>
     <ProjectItem
      key={i}
      title={project.title}

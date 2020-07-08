@@ -23,11 +23,11 @@ class Contact extends Component {
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
         <NavigationList show={this.state.menuClicked} />
-        <main className="header__box">
+        <section className="header__box">
           <h1 className="heading-primary">Feel free to send me a message.</h1>
             <p className="header__text">I am Front End Developer.</p>
             <p className="header__text">Take a look at my <span>web portfolio page</span>.</p>
-        </main>
+        </section>
         <Menu
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
