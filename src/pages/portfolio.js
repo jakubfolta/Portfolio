@@ -26,8 +26,6 @@ class Portfolio extends Component {
         <NavigationList show={this.state.menuClicked} />
         <section className="header__box">
           <h1 className="heading-primary">My projects.</h1>
-            <p className="header__text">I am Front End Developer.</p>
-            <p className="header__text">Take a look at my <span>web portfolio page</span>.</p>
         </section>
         <Menu
           show={this.state.menuClicked}
