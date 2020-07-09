@@ -1,10 +1,10 @@
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateY(-50%);
   width: 100%;
   z-index: 150;
   overflow: hidden;
