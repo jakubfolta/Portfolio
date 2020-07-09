@@ -24,7 +24,7 @@ class About extends Component {
           clicked={this.navVisibilityHandler} />
         <NavigationList show={this.state.menuClicked} />
         <section className="header__box">
-          <h1 className="heading-primary">Father, coder, writer, lifetime student of personal development.</h1>
+          <h2 className="heading-about">Father, coder, writer, lifetime student of personal development.</h2>
             <p className="header__text">I am Front End Developer.</p>
             <p className="header__text">Take a look at my <span>web portfolio page</span>.</p>
         </section>

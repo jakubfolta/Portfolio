@@ -15,6 +15,8 @@ const ProjectsList = () => {
               frontmatter {
                 title
                 technologies
+                github
+                demo
                 image {
                   childImageSharp {
                     fluid {
@@ -36,11 +38,13 @@ const ProjectsList = () => {
      title={project.node.frontmatter.title}
      description={project.node.excerpt}
      image={project.node.frontmatter.image.childImageSharp.fluid}
-     technologies={project.node.frontmatter.technologies} /> )
+     technologies={project.node.frontmatter.technologies}
+     githublink={project.node.frontmatter.github}
+     demolink={project.node.frontmatter.demo} /> )
 
   return (
     <Fragment>
-      <h1 className="heading-primary">My portfolio.</h1>
+      <h2 className="heading-primary projects__heading">My portfolio</h2>
       <ul className="projects__list">
         {projects}
       </ul>

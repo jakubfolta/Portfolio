@@ -1,4 +1,10 @@
 .projects {
+  &__heading {
+    font-size: $huge-font-size;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+  }
+
   &__list {
     list-style: none;
     margin-top: 1rem;
@@ -6,23 +12,61 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
 
+    &:not(:last-child) { margin-bottom: 3rem; }
+
+    &-title {
+      font-size: $big-font-size;
+      color: $color-tertiary;
+    }
   }
+
   &__image-container {
     margin: 1rem 0;
   }
 
-  &__image {
-
-  }
   &__description-container {
 
   }
-  &__description-title {
 
+  &__description-technologies {
+    font-size: $medium-font-size;
+    color: $color-tertiary;
+    margin-top: 2rem;
   }
 
-  &__description-text {
+  &__buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  &__button:link,
+  &__button:visited {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    padding: .5rem 4rem;
+    font-size: $small-font-size;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 1rem;
+    box-shadow: .2rem .3rem 1rem $color-black;
 
   }
 }
+
+
+
+
+
+
+
+
+
+
+
