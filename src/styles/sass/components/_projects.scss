@@ -14,33 +14,27 @@
   &__item {
     display: flex;
     flex-direction: column;
-
-    &:not(:last-child) { margin-bottom: 3rem; }
+    margin-bottom: 3rem;
 
     &-title {
       font-size: $big-font-size;
       color: $color-tertiary;
+      margin-bottom: 1rem;
     }
   }
 
-  &__image-container {
-    margin: 1rem 0;
-  }
-
-  &__description-container {
-
-  }
+  &__image-container { margin: 1rem 0; }
 
   &__description-technologies {
     font-size: $medium-font-size;
     color: $color-tertiary;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   &__buttons-container {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   &__button:link,
@@ -48,15 +42,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 8rem;
     margin: 0 1rem;
-    padding: .5rem 4rem;
+    padding: .6rem 7rem;
     font-size: $small-font-size;
     letter-spacing: .1rem;
     text-decoration: none;
     color: inherit;
     border-radius: 1rem;
     box-shadow: .2rem .3rem 1rem $color-black;
-
   }
 }
 

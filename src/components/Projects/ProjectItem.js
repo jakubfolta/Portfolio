@@ -20,8 +20,6 @@ const ProjectItem = props => (
         <a className="projects__button" href={props.demolink} alt="Demo" target="_blank" rel="noopener noreferrer"><FaLink />Demo</a>
       </div>
     </div>
-
-
   </li>
 );
 
