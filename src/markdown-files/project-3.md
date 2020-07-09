@@ -4,4 +4,4 @@ image: 'images/yatsu.png'
 technologies: ['React', 'Gatsbygdfggd']
 number: 3
 ---
-loremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevdloremsdsfrei vff fgffvfd frevd
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
