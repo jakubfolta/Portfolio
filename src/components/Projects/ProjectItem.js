@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Img from 'gatsby-image';
+
 const ProjectItem = props => (
   <li className="projects__item">
     <h3 className="projects__description-title">{props.title}</h3>
     <div className="projects__image-container">
-      <img className="projects__image" src="https://picsum.photos/300/200" alt="Screenshot of project" />
+      <Img className="projects__image" fluid={props.image} alt="Screenshot of project" />
     </div>
 
     <div className="projects__description-container">

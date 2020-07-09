@@ -24,13 +24,10 @@ class Portfolio extends Component {
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
         <NavigationList show={this.state.menuClicked} />
-        <section className="header__box">
-          <h1 className="heading-primary">My projects.</h1>
-        </section>
+        <ProjectsList />
         <Menu
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
-        <ProjectsList />
       </Layout>
     )
   }

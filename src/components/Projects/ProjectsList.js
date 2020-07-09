@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import ProjectItem from './ProjectItem';
@@ -35,12 +35,16 @@ const ProjectsList = () => {
      key={project.node.id}
      title={project.node.frontmatter.title}
      description={project.node.excerpt}
+     image={project.node.frontmatter.image.childImageSharp.fluid}
      technologies={project.node.frontmatter.technologies} /> )
 
   return (
-    <ul className="projects__list">
-      {projects}
-    </ul>
+    <Fragment>
+      <h1 className="heading-primary">My projects.</h1>
+      <ul className="projects__list">
+        {projects}
+      </ul>
+    </Fragment>
   )
 };
 
