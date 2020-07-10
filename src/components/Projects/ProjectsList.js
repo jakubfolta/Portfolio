@@ -40,7 +40,7 @@ const ProjectsList = () => {
      image={project.node.frontmatter.image.childImageSharp.fluid}
      technologies={project.node.frontmatter.technologies}
      githublink={project.node.frontmatter.github}
-     demolink={project.node.frontmatter.demo} /> )
+     visitlink={project.node.frontmatter.demo} /> )
 
   return (
     <Fragment>

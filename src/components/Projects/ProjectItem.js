@@ -16,8 +16,8 @@ const ProjectItem = props => (
       <p className="projects__description-technologies">{props.technologies.join(' - ')}</p>
 
       <div className="projects__buttons-container">
-        <a className="projects__button" href={props.githublink} alt="Source code" target="_blank" rel="noopener noreferrer"><FaGithub />Source</a>
-        <a className="projects__button" href={props.demolink} alt="Demo" target="_blank" rel="noopener noreferrer"><FaLink />Demo</a>
+        <a className="projects__button" href={props.githublink} alt="Source code" target="_blank" rel="noopener noreferrer"><FaGithub /><span>Source</span></a>
+        <a className="projects__button" href={props.visitlink} alt="Demo" target="_blank" rel="noopener noreferrer"><FaLink /><span>Visit</span></a>
       </div>
     </div>
   </li>

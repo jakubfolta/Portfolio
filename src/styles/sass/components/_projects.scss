@@ -27,9 +27,9 @@
   &__image-container { margin: 1rem 0; }
 
   &__description-technologies {
-    font-size: $medium-font-size;
+    text-transform: uppercase;
     color: $color-tertiary;
-    margin-top: 1rem;
+    margin-top: .8rem;
   }
 
   &__buttons-container {
@@ -41,17 +41,37 @@
   &__button:link,
   &__button:visited {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 8rem;
     margin: 0 1rem;
-    padding: .6rem 7rem;
+    padding: .6rem 2rem;
     font-size: $small-font-size;
-    letter-spacing: .1rem;
+    letter-spacing: .3rem;
     text-decoration: none;
-    color: inherit;
+    color: $color-tertiary;
     border-radius: 1rem;
     box-shadow: .2rem .3rem 1rem $color-black;
+
+    & span { margin-left: 1rem; }
+  }
+
+  &__footer-heading {
+    text-align: center;
+    font-size: $big-font-size;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-top: 2rem;
+  }
+
+  &__footer-text {
+    font-size: $medium-font-size;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__footer-link {
+    text-decoration: none;
+    color: $color-tertiary;
   }
 }
 
