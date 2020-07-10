@@ -28,11 +28,11 @@ class HomeIndex extends Component {
           clicked={this.navVisibilityHandler} />
         <NavigationList show={this.state.menuClicked} />
         <Logo />
-        <main className="header__box">
+        <section className="header__box">
           <h1 className="heading-primary">Hello, my name is Jakub Folta.</h1>
           <p className="header__text">I am passionate Front End Developer based in London.</p>
           <p className="header__text">Take a look at my <Link to="/portfolio" className="header__link">web portfolio page</Link> or send me an <a className="header__link" href="mailto:jakubfolta@yahoo.co.uk">email</a>.</p>
-        </main>
+        </section>
         <Header>
           <SocialsList />
         </Header>

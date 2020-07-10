@@ -44,10 +44,9 @@ const ProjectsList = () => {
 
   return (
     <Fragment>
-      <h2 className="heading-primary projects__heading">My portfolio</h2>
-      <ul className="projects__list">
-        {projects}
-      </ul>
+        <ul className="projects__list">
+          {projects}
+        </ul>
     </Fragment>
   )
 };

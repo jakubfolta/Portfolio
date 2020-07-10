@@ -4,9 +4,9 @@ import '../styles/sass/main.scss';
 import 'typeface-architects-daughter';
 
 const Layout = props => (
-  <div className="layout">
+  <main className="layout">
     {props.children}
-  </div>
+  </main>
 );
 
 
