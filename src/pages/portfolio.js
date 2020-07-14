@@ -19,7 +19,7 @@ class Portfolio extends Component {
       <Layout
         show={this.state.menuClicked}
         clicked={this.navVisibilityHandler} >
-        <section>
+        <section className="section">
           <h2 className="heading-primary projects__heading">My portfolio</h2>
           <ProjectsList />
         </section>

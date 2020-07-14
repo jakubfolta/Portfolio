@@ -1,17 +1,24 @@
-.page__box {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
   padding: 0 1rem;
   font-size: $medium-font-size;
   line-height: 1.5;
   animation: appear 2s ease .75s;
   animation-fill-mode: backwards;
+
+  &--home,
+  &--contact {
+    height: 100vh;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-tertiary;
+  }
 }
-
-
-
-
