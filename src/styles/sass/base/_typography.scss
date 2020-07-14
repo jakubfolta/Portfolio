@@ -20,3 +20,10 @@ a {
   animation: jumpTop .5s ease-out 1s;
   animation-fill-mode: backwards;
 }
+
+.page__link:link,
+.page__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-tertiary;
+}

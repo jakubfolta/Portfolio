@@ -18,9 +18,9 @@ class Contact extends Component {
       <Layout
         show={this.state.menuClicked}
         clicked={this.navVisibilityHandler} >
-        <section className="header__box">
-            <p className="header__text">I am Front End Developer.</p>
-            <p className="header__text">Take a look at my <span>web portfolio page</span>.</p>
+        <section className="page__box">
+            <p className="page__text">I am Front End Developer.</p>
+            <p className="page__text">Take a look at my <span>web portfolio page</span>.</p>
         </section>
       </Layout>
     )
