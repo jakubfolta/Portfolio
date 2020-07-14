@@ -22,3 +22,25 @@
     color: $color-tertiary;
   }
 }
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.button:link,
+.button:visited {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  padding: .6rem 2rem;
+  font-size: $small-font-size;
+  letter-spacing: .3rem;
+  text-decoration: none;
+  color: $color-tertiary;
+  border-radius: 1rem;
+  box-shadow: .2rem .3rem 1rem $color-black;
+
+  & span { margin-left: 1rem; }
+}

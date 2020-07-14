@@ -24,7 +24,7 @@ class Portfolio extends Component {
           <ProjectsList />
         </section>
         <footer>
-          <h3 class="projects__footer-heading">Let's chat</h3>
+          <h3 className="projects__footer-heading">Let's chat</h3>
           <p className="projects__footer-text">Wanna contact me or chat about a project? Feel free to drop me an email at <a className="projects__footer-link" href="mailto:jakubfolta@yahoo.co.uk">jakubfolta@yahoo.co.uk</a>.</p>
         </footer>
       </Layout>
