@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Layout from '../containers/Layout';
+import Layout from '../containers/layout';
 import Menu from '../components/Menu';
 import Backdrop from '../components/Backdrop';
 import NavigationList from '../components/Navigation/NavigationList';

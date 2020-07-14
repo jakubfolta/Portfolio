@@ -30,6 +30,10 @@
     text-transform: uppercase;
     color: $color-tertiary;
     margin-top: .8rem;
+
+    @media screen and (min-width: 500px) { /////////////////////////////
+      text-transform: lowercase;
+    }
   }
 
   &__buttons-container {
