@@ -7,7 +7,10 @@ const ProjectsList = () => {
   const data = useStaticQuery(
     graphql`
       query ProjectsQuery {
-        allMarkdownRemark (sort: {fields: frontmatter___number, order: DESC}) {
+        allMarkdownRemark (
+          sort: {fields: frontmatter___number, order: DESC},
+          filter: {fileAbsolutePath: {regex: "/project/"}}
+        ) {
           edges {
             node {
               id

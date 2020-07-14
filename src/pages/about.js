@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { graphql } from 'gatsby';
 
 import Layout from '../containers/layout';
 
@@ -26,5 +27,19 @@ class About extends Component {
     )
   }
 };
+
+export const data = graphql`
+  query AboutQuery {
+    allMarkdownRemark (
+      filter: {fileAbsolutePath: {regex: "/about/"}}
+    ) {
+      edges {
+        node {
+          excerpt
+        }
+      }
+    }
+  }
+`
 
 export default About;
