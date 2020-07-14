@@ -20,7 +20,7 @@ class Portfolio extends Component {
         show={this.state.menuClicked}
         clicked={this.navVisibilityHandler} >
         <section className="section">
-          <h2 className="heading-primary projects__heading">My portfolio</h2>
+          <h2 className="heading-primary page__heading">My portfolio</h2>
           <ProjectsList />
         </section>
         <footer>

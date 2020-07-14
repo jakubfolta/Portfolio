@@ -15,31 +15,33 @@ class About extends Component {
   }
 
   render() {
+    const data = this.props.data.allMarkdownRemark.edges[0].node.excerpt;
+
     return (
       <Layout
         show={this.state.menuClicked}
         clicked={this.navVisibilityHandler} >
         <section className="section">
-            <p className="section__text">I am Front End Developer.</p>
-            <p className="section__text">Take a look at my <span>web portfolio page</span>.</p>
+            <h2 className="heading-primary page__heading">About me</h2>
+            <p className="section__text">{data}</p>
         </section>
       </Layout>
     )
   }
 };
 
+export default About;
+
 export const data = graphql`
-  query AboutQuery {
-    allMarkdownRemark (
-      filter: {fileAbsolutePath: {regex: "/about/"}}
-    ) {
-      edges {
-        node {
-          excerpt
-        }
+query AboutQuery {
+  allMarkdownRemark (
+    filter: {fileAbsolutePath: {regex: "/about/"}}
+  ) {
+    edges {
+      node {
+        excerpt
       }
     }
   }
+}
 `
-
-export default About;
