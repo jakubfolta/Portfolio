@@ -1,29 +1,22 @@
-.header {
-  position: fixed;
-  bottom: 5%;
-  width: 100%;
+.header__box {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
-  &__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    padding: 0 1rem;
-    font-size: $medium-font-size;
-    line-height: 1.5;
-    animation: appear 2s ease .75s;
-    animation-fill-mode: backwards;
-  }
-
-  &__link:link,
-  &__link:visited {
-    display: inline-block;
-    text-decoration: none;
-    color: $color-tertiary;
-  }
+  text-align: center;
+  height: 100vh;
+  padding: 0 1rem;
+  font-size: $medium-font-size;
+  line-height: 1.5;
+  animation: appear 2s ease .75s;
+  animation-fill-mode: backwards;
 }
+
+.header__link:link,
+.header__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-tertiary;
+}
+
 
