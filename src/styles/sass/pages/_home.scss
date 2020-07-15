@@ -32,8 +32,18 @@
   color: $color-tertiary;
   border-radius: 1rem;
   box-shadow: .2rem .3rem 1rem $color-black;
+  transition: all .5s;
 
   & span { margin-left: 1rem; }
+
+  @media only screen and (min-width: 800px) and (hover: hover) {
+    &:hover {
+      color: $color-primary;
+      transform: translateY(-.2rem);
+    }
+
+    &:active { transform: translate(0); }
+  }
 }
 
 .footer-heading {
