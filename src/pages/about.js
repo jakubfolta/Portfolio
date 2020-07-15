@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../containers/layout';
+import Footer from '../components/Footer';
 import { FaReadme } from 'react-icons/fa';
 
 class About extends Component {
@@ -29,6 +30,9 @@ class About extends Component {
               <a className="button" href={data.frontmatter.file.publicURL} alt="Source code" target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
             </div>
         </section>
+        <Footer
+          title="Intrigued?"
+          text="Wanna talk about my path or get some more information? Feel free to drop me an email at" />
       </Layout>
     )
   }
@@ -43,7 +47,7 @@ query AboutQuery {
   ) {
     edges {
       node {
-        excerpt
+        excerpt (pruneLength: 1000)
         frontmatter {
           file {
             publicURL

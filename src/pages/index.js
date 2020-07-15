@@ -26,7 +26,7 @@ class HomeIndex extends Component {
         <section className="section section--home">
           <h1 className="heading-primary">Hello, my name is Jakub Folta.</h1>
           <p className="section__text">I am passionate Front End Developer based in London.</p>
-          <p className="section__text">Take a look at my <Link to="/portfolio" className="section__link">web portfolio page</Link> or send me an <a className="section__link" href="mailto:jakubfolta@yahoo.co.uk">email</a>.</p>
+          <p className="section__text">Take a look at my <Link to="/portfolio" className="link">web portfolio page</Link> or send me an <a className="link" href="mailto:jakubfolta@yahoo.co.uk">email</a>.</p>
         </section>
       </Layout>
     )

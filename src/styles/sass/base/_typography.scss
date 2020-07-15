@@ -28,3 +28,10 @@ a {
   letter-spacing: .4rem;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-tertiary;
+}
+
