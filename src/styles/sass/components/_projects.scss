@@ -18,8 +18,10 @@
   }
 
   &__image-container { margin: 1rem 0; }
+  &__description-text { padding: 0 2rem; }
 
   &__description-technologies {
+    font-size: 1.4rem;
     text-transform: uppercase;
     color: $color-tertiary;
     margin-top: .8rem;
