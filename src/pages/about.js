@@ -24,13 +24,13 @@ class About extends Component {
         show={this.state.menuClicked}
         clicked={this.navVisibilityHandler} >
         <section className="section">
-            <h2 className="heading-primary page__heading">About me</h2>
-            <p className="section__text">{data.frontmatter.foreword}</p>
-            <p className="section__text">{data.frontmatter.extension}</p>
-            <p className="section__text">{data.frontmatter.conclusion}</p>
-            <div className="buttons-container">
-              <a className="button" href={data.frontmatter.file.publicURL} alt="Source code" target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
-            </div>
+          <h2 className="heading-primary page__heading">About me</h2>
+          <p className="section__text">{data.frontmatter.foreword}</p>
+          <p className="section__text">{data.frontmatter.extension}</p>
+          <p className="section__text">{data.frontmatter.conclusion}</p>
+          <div className="buttons-container">
+            <a className="button" href={data.frontmatter.file.publicURL} alt="Source code" target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
+          </div>
         </section>
         <Footer
           title="Intrigued?"

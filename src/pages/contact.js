@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Layout from '../containers/layout';
+import ContactForm from '../components/ContactForm';
 
 class Contact extends Component {
   state = {
@@ -19,8 +20,9 @@ class Contact extends Component {
         show={this.state.menuClicked}
         clicked={this.navVisibilityHandler} >
         <section className="section section--contact">
-            <p className="section__text">I am Front End Developer.</p>
-            <p className="section__text">Take a look at my <span>web portfolio page</span>.</p>
+          <h2 className="heading-primary page__heading">So, let's talk ;)</h2>
+          <p className="section__text">Either you want to ask me about something or just to get my attention, fill up this complicated form below or simply send me an email to <a className="link" href="mailto:jakubfolta@yahoo.co.uk">jakubfolta@yahoo.co.uk</a>.</p>
+          <ContactForm />
         </section>
       </Layout>
     )
