@@ -1,25 +1,35 @@
 import React from 'react';
 
 import { FaReadme } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 const ContactForm = () => (
-  <form className="form" method="post" action="">
+  <form className="form" method="post" action="/">
     <div className="form__group">
-      <FaReadme />
-      <label className="form__label" for="name">Your name</label>
-      <input className="form__text" type="text" name="name" placeholder="Your name" id="name" required autofocus />
+      <IconContext.Provider value={{className: "form__icon"}}>
+        <FaReadme />
+      </IconContext.Provider>
+      <input className="form__input" type="text" name="name" placeholder="Full name" id="name" required autocomplete="off"/>
+      <label className="form__label" for="name">Full name</label>
     </div>
 
     <div className="form__group">
-      <FaReadme />
-      <label className="form__label" for="email">Your email</label>
-      <input className="form__email" type="email" name="email" placeholder="Your email" id="email" required />
+      <IconContext.Provider value={{className: "form__icon"}}>
+        <FaReadme />
+      </IconContext.Provider>
+      <input className="form__input" type="email" name="email" placeholder="Email" id="email" required autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+      <label className="form__label" for="email">Email</label>
     </div>
 
     <div className="form__group">
+      <IconContext.Provider value={{className: "form__icon"}}>
+        <FaReadme />
+      </IconContext.Provider>
+      <textarea className="form__textarea" name="message" id="message" placeholder="Message..."></textarea>
       <label className="form__label" for="message"></label>
-      <textarea className="form__textarea" name="message" id="message" placeholder="Message..." rows="10" cols="30"></textarea>
     </div>
+
+    <input className="form__submit" type="submit" value="Send" />
   </form>
 );
 
