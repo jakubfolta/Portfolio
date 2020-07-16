@@ -41,12 +41,18 @@
     border-bottom: 2px solid $color-secondary--light;
 
     &:focus:invalid { border-bottom: 2px solid $color-warning; }
-    &:focus:valid { border-bottom: 2px solid $color-primary; }
+
+    &:focus:valid,
+    &:valid { border-bottom: 2px solid $color-primary; }
   }
 
   &__input:placeholder-shown + &__label {
     transform: translate(4.2rem, -3rem);
     opacity: 0;
+  }
+
+  &__input:valid + &__submit {
+    color: $color-primary;
   }
 
   &__label {
@@ -71,5 +77,10 @@
     border-radius: 1rem;
     padding: .5rem 3rem;
     width: 70%;
+    transition: transform .3s;
+
+    &:active {
+      transform: translateY(.3rem);
+    }
   }
 }
