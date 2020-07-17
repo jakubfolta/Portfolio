@@ -16,7 +16,7 @@
   &__icon {
     position: absolute;
     top: 1.3rem;
-    left: 1rem;
+    left: .7rem;
     font-size: $big-font-size;
     color: $color-tertiary;
   }
@@ -40,10 +40,12 @@
   &__input {
     border-bottom: 2px solid $color-secondary--light;
 
-    &:focus:invalid { border-bottom: 2px solid $color-warning; }
+    &:focus { border-bottom: 2px solid $color-warning; }
 
-    &:focus:valid,
-    &:valid { border-bottom: 2px solid $color-primary; }
+    &--valid,
+    &--valid:focus {
+      border-bottom: 2px solid $color-primary;
+    }
   }
 
   &__input:placeholder-shown + &__label {

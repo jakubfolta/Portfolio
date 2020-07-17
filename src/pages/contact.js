@@ -10,14 +10,19 @@ class Contact extends Component {
       name: {
         value: '',
         valid: false,
-        minLength: 2
+        rules: {
+          minLength: 2
+        }
       },
       email: {
         value: '',
-        valid: false
-      },
-      validForm: false
-    }
+        valid: false,
+        rules: {
+          isEmail: true
+        }
+      }
+    },
+    validForm: false
   }
 
   navVisibilityHandler = () => {
@@ -26,8 +31,19 @@ class Contact extends Component {
     });
   }
 
-  checkValidity = (value) => {
+  checkValidity = (value, rules) => {
+    let isValid = false;
 
+    if (rules.minLength) {
+      isValid = value.trim().length >= rules.minLength;
+    }
+
+    if (rules.isEmail) {
+      const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+      isValid = pattern.test(value);
+    }
+
+    return isValid;
   }
 
   onChangeHandler = (e) => {
@@ -36,17 +52,15 @@ class Contact extends Component {
     const updatedFormElement = {...updatedForm[type]};
 
     updatedFormElement.value = e.target.value;
-    updatedFormElement.valid = this.checkValidity(updatedFormElement.value);
+    updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.rules);
     updatedForm[type] = updatedFormElement;
 
     let valid = true;
     for (let e in updatedForm) {
       valid = updatedForm[e].valid && valid;
     }
-    updatedForm.validForm = valid;
 
-
-    this.setState({form: updatedForm}, );
+    this.setState({form: updatedForm, validForm: valid});
     // console.log(formElement);
   }
 
@@ -64,7 +78,9 @@ class Contact extends Component {
           <p className="section__text">Either you want to ask me about something or just to get my attention, fill up this complicated form below or simply send me an email to <a className="link" href="mailto:jakubfolta@yahoo.co.uk">jakubfolta@yahoo.co.uk</a>.</p>
           <ContactForm
             textValue={form.name.value}
+            textValid={form.name.valid}
             emailValue={form.email.value}
+            emailValid={form.email.valid}
             change={e => this.onChangeHandler(e)}
             formIsValid={!form.validForm} />
         </section>
