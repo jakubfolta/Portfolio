@@ -61,14 +61,11 @@ class Contact extends Component {
     }
 
     this.setState({form: updatedForm, validForm: valid});
-    // console.log(formElement);
   }
 
   render() {
     const form = this.state.form;
 
-
-    // console.log(form);
     return (
       <Layout
         show={this.state.menuClicked}
@@ -82,7 +79,7 @@ class Contact extends Component {
             emailValue={form.email.value}
             emailValid={form.email.valid}
             change={e => this.onChangeHandler(e)}
-            formIsValid={!form.validForm} />
+            formIsValid={!this.state.validForm} />
         </section>
       </Layout>
     )

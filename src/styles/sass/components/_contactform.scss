@@ -80,6 +80,11 @@
     padding: .5rem 3rem;
     width: 70%;
     transition: transform .3s;
+    opacity: .4;
+
+    &--on {
+      
+    }
 
     &:active {
       transform: translateY(.3rem);

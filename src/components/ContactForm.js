@@ -4,8 +4,8 @@ import { FaUser, FaEnvelope, FaEdit } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
 const ContactForm = props => {
-  const classes = ['form__input', props.textValid ? 'form__input--valid' : '']
-
+  const textClasses = ['form__input', props.textValid ? 'form__input--valid' : ''];
+  const emailClasses = ['form__input', props.emailValid ? 'form__input--valid' : ''];
 
   return (
     <form className="form" method="post" action="/" noValidate>
@@ -14,7 +14,7 @@ const ContactForm = props => {
           <FaUser />
         </IconContext.Provider>
         <input
-          className={classes.join(' ')}
+          className={textClasses.join(' ')}
           type="text"
           name="name"
           placeholder="Full name"
@@ -33,7 +33,7 @@ const ContactForm = props => {
           <FaEnvelope />
         </IconContext.Provider>
         <input
-          className="form__input"
+          className={emailClasses.join(' ')}
           type="email"
           name="email"
           placeholder="Email"
