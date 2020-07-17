@@ -26,21 +26,35 @@ class Contact extends Component {
     });
   }
 
+  checkValidity = (value) => {
+
+  }
+
   onChangeHandler = (e) => {
     const type = e.target.name;
     const updatedForm = {...this.state.form};
     const updatedFormElement = {...updatedForm[type]};
 
     updatedFormElement.value = e.target.value;
+    updatedFormElement.valid = this.checkValidity(updatedFormElement.value);
     updatedForm[type] = updatedFormElement;
 
-    this.setState({form: updatedForm});
+    let valid = true;
+    for (let e in updatedForm) {
+      valid = updatedForm[e].valid && valid;
+    }
+    updatedForm.validForm = valid;
+
+
+    this.setState({form: updatedForm}, );
     // console.log(formElement);
   }
 
   render() {
     const form = this.state.form;
-    console.log(form);
+
+
+    // console.log(form);
     return (
       <Layout
         show={this.state.menuClicked}
