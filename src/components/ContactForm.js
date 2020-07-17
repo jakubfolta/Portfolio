@@ -16,12 +16,12 @@ const ContactForm = props => (
         placeholder="Full name"
         id="name"
         required
-        autocomplete="off"
+        autoComplete="off"
         value={props.textValue}
         onChange={props.change} />
       <label
         className="form__label"
-        for="name">Full name</label>
+        htmlFor="name">Full name</label>
     </div>
 
     <div className="form__group">
@@ -35,13 +35,13 @@ const ContactForm = props => (
         placeholder="Email"
         id="email"
         required
-        autocomplete="off"
+        autoComplete="off"
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         value={props.emailValue}
         onChange={props.change} />
       <label
         className="form__label"
-        for="email">Email</label>
+        htmlFor="email">Email</label>
     </div>
 
     <div className="form__group">
@@ -55,7 +55,7 @@ const ContactForm = props => (
         placeholder="Message..."></textarea>
       <label
         className="form__label"
-        for="message"></label>
+        htmlFor="message"></label>
     </div>
 
     <input
