@@ -8,7 +8,7 @@ const ContactForm = props => {
   const emailClasses = ['form__input', props.emailValid ? 'form__input--valid' : ''];
 
   return (
-    <form className="form" method="post" action="/" noValidate>
+    <form className="form" method="post" action="/" >
       <div className="form__group">
         <IconContext.Provider value={{className: "form__icon"}}>
           <FaUser />
@@ -40,7 +40,6 @@ const ContactForm = props => {
           id="email"
           required
           autoComplete="off"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           value={props.emailValue}
           onChange={props.change} />
         <label
@@ -58,12 +57,12 @@ const ContactForm = props => {
           id="message"
           placeholder="Message..."></textarea>
         <label
-          className="form__label"
-          htmlFor="message"></label>
+          className="form__label form__label--textarea"
+          htmlFor="message">Message</label>
       </div>
 
       <input
-        className="form__submit"
+        className={['form__submit', !props.formIsValid ? 'form__submit--on' : '' ].join(' ')}
         type="submit"
         value="Send"
         disabled={props.formIsValid} />

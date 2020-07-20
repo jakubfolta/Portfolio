@@ -18,7 +18,8 @@
     top: 1.3rem;
     left: .7rem;
     font-size: $big-font-size;
-    color: $color-tertiary;
+    color: $color-white;
+    // color: $color-tertiary;
   }
 
   &__input,
@@ -30,7 +31,8 @@
     border: none;
     background-color: inherit;
     padding: 1rem 4rem;
-    color: $color-tertiary;
+    color: $color-white;
+    // color: $color-tertiary;
     width: 100%;
     transition: all .3s;
 
@@ -64,6 +66,8 @@
     transform: translateX(4.2rem);
     opacity: 1;
     transition: all .3s;
+
+    &--textarea { opacity: 0; }
   }
 
   &__textarea {
@@ -79,11 +83,13 @@
     border-radius: 1rem;
     padding: .5rem 3rem;
     width: 70%;
-    transition: transform .3s;
+    transition: all .3s;
     opacity: .4;
 
     &--on {
-      
+      color: $color-primary;
+      box-shadow: .2rem .3rem 1rem $color-black, .2rem .3rem 2rem $color-primary;
+      opacity: 1;
     }
 
     &:active {
