@@ -6,9 +6,13 @@ import { IconContext } from 'react-icons';
 const ContactForm = props => {
   const textClasses = ['form__input', props.textValid ? 'form__input--valid' : ''];
   const emailClasses = ['form__input', props.emailValid ? 'form__input--valid' : ''];
+  const formKey = '4bd41fedf9f20d23324c6c6c5efd2f788b2e7ed2';
 
   return (
-    <form className="form" method="post" action="/" >
+    <form
+      className="form"
+      method="post"
+      action={`https://www.flexyform.com/f/${formKey}`} >
       <div className="form__group">
         <IconContext.Provider value={{className: "form__icon"}}>
           <FaUser />
@@ -62,10 +66,12 @@ const ContactForm = props => {
       </div>
 
       <input
-        className={['form__submit', !props.formIsValid ? 'form__submit--on' : '' ].join(' ')}
+        className={['form__submit', props.formIsValid ? 'form__submit--on' : '' ].join(' ')}
         type="submit"
         value="Send"
-        disabled={props.formIsValid} />
+        disabled={!props.formIsValid} />
+
+      <input type="text" style={{visibility: 'hidden'}} readOnly value="" name="_empty_field"/>
     </form>
   )
 };

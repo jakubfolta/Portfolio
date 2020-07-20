@@ -79,7 +79,7 @@ class Contact extends Component {
             emailValue={form.email.value}
             emailValid={form.email.valid}
             change={e => this.onChangeHandler(e)}
-            formIsValid={!this.state.validForm} />
+            formIsValid={this.state.validForm} />
         </section>
       </Layout>
     )
