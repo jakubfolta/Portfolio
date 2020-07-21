@@ -10,8 +10,30 @@
   animation: appear 2s ease .75s;
   animation-fill-mode: backwards;
 
+  &__text--first {
+    animation: appear 2s ease 1.2s;
+    animation-fill-mode: backwards;
+  }
+
+  &__flash {
+    animation: flash 1s ease-out 2s;
+    animation-fill-mode: backwards;
+    display: inline-block;
+  }
+
+  &__wink {
+    animation: appear 1s ease 4s;
+    animation-fill-mode: backwards;
+  }
+
+  &__text--second {
+    animation: appear 2s ease 5s;
+    animation-fill-mode: backwards;
+  }
+
   &--home,
-  &--contact { height: 100vh; }
+  &--contact,
+  &--thanks { height: 100vh; }
 }
 
 .buttons-container {

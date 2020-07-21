@@ -78,3 +78,33 @@
   0% { transform: rotate(405deg); }
   100% { transform: rotate(0); }
 }
+
+@keyframes flash {
+  0% {
+    transform: translate(-5vh, -60vh);
+    color: $color-wink1;
+  }
+
+  30% {
+    transform: translate(-50vh, -20vh);
+    color: $color-wink2;
+  }
+
+  50% {
+    transform: translate(-15vh, 50vh);
+    color: $color-warning;
+  }
+
+  70% {
+    transform: translate(20vh, -11vh);
+    color: $color-primary;
+  }
+
+  80% {
+    transform: translate(-1vh, 3vh);
+    color: $color-primary;
+  }
+  100% {
+    transform: translate(0);
+  }
+}
