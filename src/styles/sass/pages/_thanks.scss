@@ -1,0 +1,22 @@
+.section {
+  &__text--thanks-1 {
+    animation: appear 2s ease 1.2s;
+    animation-fill-mode: backwards;
+  }
+
+  &__thanks-flash {
+    animation: flash 1s ease-out 2s;
+    animation-fill-mode: backwards;
+    display: inline-block;
+  }
+
+  &__thanks-wink {
+    animation: appear 1s ease 3.2s;
+    animation-fill-mode: backwards;
+  }
+
+  &__text--thanks-2 {
+    animation: appear 2s ease 4s;
+    animation-fill-mode: backwards;
+  }
+}

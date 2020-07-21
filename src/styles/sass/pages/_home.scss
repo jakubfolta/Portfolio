@@ -10,75 +10,8 @@
   animation: appear 2s ease .75s;
   animation-fill-mode: backwards;
 
-  &__text--first {
-    animation: appear 2s ease 1.2s;
-    animation-fill-mode: backwards;
-  }
-
-  &__flash {
-    animation: flash 1s ease-out 2s;
-    animation-fill-mode: backwards;
-    display: inline-block;
-  }
-
-  &__wink {
-    animation: appear 1s ease 4s;
-    animation-fill-mode: backwards;
-  }
-
-  &__text--second {
-    animation: appear 2s ease 5s;
-    animation-fill-mode: backwards;
-  }
-
   &--home,
   &--contact,
   &--thanks { height: 100vh; }
 }
 
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.button:link,
-.button:visited {
-  display: flex;
-  align-items: center;
-  margin: 0 1rem;
-  padding: .6rem 2rem;
-  font-size: $small-font-size;
-  letter-spacing: .3rem;
-  text-decoration: none;
-  color: $color-white;
-  border-radius: 1rem;
-  box-shadow: .2rem .3rem 1rem $color-black;
-  transition: all .5s;
-
-  & span { margin-left: 1rem; }
-
-  @media only screen and (min-width: 800px) and (hover: hover) {
-    &:hover {
-      color: $color-primary;
-      transform: translateY(-.2rem);
-    }
-
-    &:active { transform: translate(0); }
-  }
-}
-
-.footer-heading {
-  text-align: center;
-  font-size: $big-font-size;
-  letter-spacing: .3rem;
-  text-transform: uppercase;
-  color: $color-white;
-  margin-top: 3rem;
-}
-
-.footer-text {
-  font-size: $medium-font-size;
-  text-align: center;
-  margin-bottom: 2rem;
-}
