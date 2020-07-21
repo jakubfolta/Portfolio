@@ -63,7 +63,7 @@ const ContactForm = props => {
           htmlFor="message">Message</label>
       </div>
 
-      <input type="text" style={{visibility: "hidden"}} value="" name="_empty_field"/>
+      <input type="text" style={{visibility: "hidden"}} value="" name="_empty_field" readOnly />
 
       <input
         className={['form__submit', props.formIsValid ? 'form__submit--on' : '' ].join(' ')}
