@@ -47,7 +47,7 @@ class Contact extends Component {
   }
 
   onChangeHandler = (e) => {
-    const type = e.target.name;
+    const type = e.target.id;
     const updatedForm = {...this.state.form};
     const updatedFormElement = {...updatedForm[type]};
 

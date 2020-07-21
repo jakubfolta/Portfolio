@@ -6,7 +6,7 @@ import { IconContext } from 'react-icons';
 const ContactForm = props => {
   const textClasses = ['form__input', props.textValid ? 'form__input--valid' : ''];
   const emailClasses = ['form__input', props.emailValid ? 'form__input--valid' : ''];
-  const formKey = '4bd41fedf9f20d23324c6c6c5efd2f788b2e7ed2';
+  const formKey = 'bb74bd54f869d72763298e1c51910ffae3ced471';
 
   return (
     <form
@@ -23,7 +23,6 @@ const ContactForm = props => {
           name="name"
           placeholder="Full name"
           id="name"
-          required
           autoComplete="off"
           value={props.textValue}
           onChange={props.change} />
@@ -39,10 +38,9 @@ const ContactForm = props => {
         <input
           className={emailClasses.join(' ')}
           type="email"
-          name="email"
+          name="_reply_to"
           placeholder="Email"
           id="email"
-          required
           autoComplete="off"
           value={props.emailValue}
           onChange={props.change} />
@@ -65,13 +63,13 @@ const ContactForm = props => {
           htmlFor="message">Message</label>
       </div>
 
+      <input type="text" style={{visibility: "hidden"}} value="" name="_empty_field"/>
+
       <input
         className={['form__submit', props.formIsValid ? 'form__submit--on' : '' ].join(' ')}
         type="submit"
         value="Send"
         disabled={!props.formIsValid} />
-
-      <input type="text" style={{visibility: 'hidden'}} readOnly value="" name="_empty_field"/>
     </form>
   )
 };
