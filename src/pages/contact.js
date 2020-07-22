@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Layout from '../containers/layout';
+import Layout from '../containers/Layout';
 import ContactForm from '../components/ContactForm';
 
 class Contact extends Component {

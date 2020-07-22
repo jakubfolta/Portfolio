@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../containers/layout';
+import Layout from '../containers/Layout';
 import Footer from '../components/Footer';
 import { FaReadme } from 'react-icons/fa';
 

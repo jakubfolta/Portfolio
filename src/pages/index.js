@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import Layout from '../containers/layout';
+import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
 import Socials from '../components/Socials';
 
