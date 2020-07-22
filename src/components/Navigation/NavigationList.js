@@ -1,6 +1,7 @@
 import React from 'react';
 
 import CSSTransition from 'react-transition-group/CSSTransition';
+import { Link } from 'gatsby';
 import NavigationItem from './NavigationItem';
 
 const NavigationList = props => {
@@ -16,9 +17,8 @@ const NavigationList = props => {
       in={props.show}
       timeout={animationTiming}
       classNames={{
-        enterActive: 'showNav',
-        enterDone: 'showNav',
-        exitActive: 'navigation'
+        enterActive: 'showNavigation',
+        enterDone: 'showNavigation'
       }} >
       <nav className="navigation">
         <ul className="navigation__list">

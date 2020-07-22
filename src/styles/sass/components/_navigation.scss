@@ -9,6 +9,7 @@
   z-index: 150;
   overflow: hidden;
 
+
   &__list {
     list-style: none;
     display: flex;
@@ -43,7 +44,7 @@
   }
 }
 
-.navigation.showNav .navigation__item {
+.navigation.showNavigation .navigation__item {
   transform: translate(0);
   transition: transform cubic-bezier(.57,1.69,.41,.71) .5s;
 
