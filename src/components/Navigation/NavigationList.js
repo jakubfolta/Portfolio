@@ -1,7 +1,6 @@
 import React from 'react';
 
 import CSSTransition from 'react-transition-group/CSSTransition';
-import { Link } from 'gatsby';
 import NavigationItem from './NavigationItem';
 
 const NavigationList = props => {

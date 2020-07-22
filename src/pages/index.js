@@ -6,7 +6,7 @@ import Logo from '../components/Logo';
 import Socials from '../components/Socials';
 
 const HomeIndex = () => (
-  <Layout>
+  <Layout title="Folta | Front End Developer">
     <Logo />
     <Socials />
     <section className="section section--home">
@@ -16,6 +16,5 @@ const HomeIndex = () => (
     </section>
   </Layout>
 )
-
 
 export default HomeIndex;

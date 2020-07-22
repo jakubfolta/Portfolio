@@ -82,12 +82,12 @@
 @keyframes flash {
   0% {
     transform: translate(-5vh, -60vh);
-    color: $color-wink1;
+    color: $color-flash1;
   }
 
   30% {
     transform: translate(-50vh, -20vh);
-    color: $color-wink2;
+    color: $color-flash2;
   }
 
   50% {
