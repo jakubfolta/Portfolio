@@ -38,9 +38,10 @@ class About extends Component {
           <blockquote className="quote">{data.frontmatter.quote}</blockquote>
           <div className="buttons-container">
             <a className="button" href={data.frontmatter.cv.publicURL} target="_blank"><FaReadme /><span>Resume</span></a>
-          </div>
-          <p className="section__text">My current stack of languages / technologies:</p>
-          <p className="section__text">{data.frontmatter.stack}</p>
+          </div><br/>
+
+          <p className="section__text"><span className="highlight highlight--5">My stack of languages / technologies:</span></p>
+          <p className="section__text technologies">{data.frontmatter.stack}</p>
         </section>
         <Footer
           title="Intrigued?"
@@ -61,10 +62,7 @@ query AboutQuery {
       node {
         excerpt (pruneLength: 1000)
         frontmatter {
-          extension1
-          extension2
           extension3
-          extension4
           conclusion
           quote
           stack
