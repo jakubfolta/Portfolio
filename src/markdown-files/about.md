@@ -1,7 +1,5 @@
 ---
-foreword: "I'm Jacob, passionate self-taught Web / Front-End Developer."
-extension1: "In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in programming. From that moment on I started my journey with my new
-passion – programming."
+extension1: "In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in programming. From that moment on I started my journey with my new"
 extension2: "I've worked through many courses like: Kodilla (Web Developer Bootcamp) | Advanced CSS and Sass: Flexbox,
 Grid, Animations | The Complete JavaScript Course 2020 |
 React - The Complete Guide (incl Hooks, React Router, Redux) and read / watch countless articles and youtube tutorials about Front-end Development. I obtained CIW Web Foundations Associate | CIW Advanced HTML5 and CSS3 Specialist and CIW JavaScript Specialist certificates."
