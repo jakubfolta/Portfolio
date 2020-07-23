@@ -72,9 +72,8 @@ a:focus {
 
 .highlight {
   position: relative;
-  padding: 0 .5rem;
-  margin: 0 .2rem;
-
+  // padding: 0 .5rem;
+  // margin: 0 .9rem;
 
   &::before,
   &::after {
@@ -91,20 +90,22 @@ a:focus {
   &--1::before,
   &--1::after {animation-delay: 2s;}
   &--2::before,
-  &--2::after {animation-delay: 3s;}
+  &--2::after {animation-delay: 2.7s;}
   &--3::before,
   &--3::after {animation-delay: 4s;}
+  &--4::before,
+  &--4::after {animation-delay: 4.7s;}
 
   &::before {
     top: 0;
-    left: 0;
+    left: -.5rem;
     border-top: .2rem solid $color-primary;
     border-left: .2rem solid $color-primary;
   }
 
   &::after {
     bottom: 0;
-    right: 0;
+    right: -.7rem;
     border-bottom: .2rem solid $color-primary;
     border-right: .2rem solid $color-primary;
   }

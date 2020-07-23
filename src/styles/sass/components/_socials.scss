@@ -17,6 +17,11 @@
     animation-fill-mode: backwards;
   }
 
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+  }
+
   &__icon { font-size: 5rem; }
 }
 

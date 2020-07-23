@@ -15,7 +15,7 @@ class About extends Component {
           <h2 className="heading-primary page__heading">About me</h2>
           <p className="section__text">I'm <span className="highlight highlight--1">Jacob</span>, passionate self-taught <br/><span className="highlight highlight--2">Web / Front-End Developer</span>.</p><br/>
 
-          <p className="section__text">In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in programming. From that moment on I started my journey with my new <br/><span className="highlight highlight--3">passion</span>.</p><br/>
+          <p className="section__text">In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in <br/><span className="highlight highlight--3">code</span>. From that moment on I started my journey with my new <br/><span className="highlight highlight--4">passion</span>.</p><br/>
 
           <p className="section__text">I've worked through many courses like: <a className="link" href="https://kodilla.com/en/bootcamp/webdeveloper?type=wdp" target="_top">Kodilla (Web Developer Bootcamp)</a> |
           <a className="link" href="https://www.udemy.com/course/advanced-css-and-sass/" target="_top">Advanced CSS and Sass: Flexbox,
