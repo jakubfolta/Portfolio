@@ -18,21 +18,26 @@ class About extends Component {
           <p className="section__text">In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in <br/><span className="highlight highlight--3">code</span>. From that moment on I started my journey with my new <br/><span className="highlight highlight--4">passion</span>.</p><br/>
 
           <p className="section__text">I've worked through many courses like: <a className="link" href="https://kodilla.com/en/bootcamp/webdeveloper?type=wdp" target="_top">Kodilla (Web Developer Bootcamp),</a>
+
           <a className="link" href="https://www.udemy.com/course/advanced-css-and-sass/" target="_top">Advanced CSS and Sass: Flexbox,
           Grid, Animations,</a>
+
           <a className="link" href="https://www.udemy.com/the-complete-javascript-course/" target="_top">The Complete JavaScript Course 2020,</a>
-          <a className="link" href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_top">React - The Complete Guide (incl Hooks, React Router, Redux)</a>
-          and read / watch countless articles and youtube tutorials about Front-end Development. Recently I also obtained
-          <a className="link" href={data.frontmatter.foundations.publicURL} target="_top">CIW Web Foundations Associat</a> |
-          <a className="link" href={data.frontmatter.html.publicURL} target="_top">CIW Advanced HTML5 and CSS3 Specialist</a>
-           and CIW JavaScript Specialist certificates.</p><br/>
-          <p className="section__text">{data.frontmatter.extension3}</p>
-          <p className="section__text">{data.frontmatter.extension4}</p>
-          <p className="section__text">{data.frontmatter.conclusion}</p>
-          <p className="section__text">My favorite quote</p>
+
+          <a className="link" href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_top">React - The Complete Guide (incl Hooks, React Router, Redux)</a> and read / watch countless articles and youtube tutorials about Front-end Development. Recently I also obtained <a className="link" href={data.frontmatter.foundations.publicURL} target="_blank">CIW Web Foundations Associate,</a>
+
+          <a className="link" href={data.frontmatter.html.publicURL} target="_blank">CIW Advanced HTML5 and CSS3 Specialist</a> and CIW JavaScript Specialist certificates.</p><br/>
+
+          <p className="section__text">{data.frontmatter.extension3}</p><br/>
+
+          <p className="section__text">To document my journey I push all my code to <a className="link" href="https://github.com/jakubfolta" target="_blank" rel="noopener noreferrer">Github</a> and publish posts on <a className="link" href="https://www.instagram.com/jakub.folta/" target="_blank" rel="noopener noreferrer">Instagram.</a></p><br/>
+
+          <p className="section__text">{data.frontmatter.conclusion}</p><br/>
+
+          <p className="section__text"><span className="highlight highlight--5">My favorite quote</span></p>
           <blockquote className="quote">{data.frontmatter.quote}</blockquote>
           <div className="buttons-container">
-            <a className="button" href={data.frontmatter.cv.publicURL} alt="Resume" target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
+            <a className="button" href={data.frontmatter.cv.publicURL} target="_blank"><FaReadme /><span>Resume</span></a>
           </div>
           <p className="section__text">My current stack of languages / technologies:</p>
           <p className="section__text">{data.frontmatter.stack}</p>

@@ -72,8 +72,6 @@ a:focus {
 
 .highlight {
   position: relative;
-  // padding: 0 .5rem;
-  // margin: 0 .9rem;
 
   &::before,
   &::after {
@@ -92,9 +90,11 @@ a:focus {
   &--2::before,
   &--2::after {animation-delay: 2.7s;}
   &--3::before,
-  &--3::after {animation-delay: 4s;}
+  &--3::after {animation-delay: 5s;}
   &--4::before,
-  &--4::after {animation-delay: 4.7s;}
+  &--4::after {animation-delay: 5.7s;}
+  &--5::before,
+  &--5::after {animation-delay: 7s;}
 
   &::before {
     top: 0;
