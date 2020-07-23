@@ -5,7 +5,7 @@ import ProjectsList from '../components/Projects/ProjectsList';
 import Footer from '../components/Footer';
 
 const Portfolio = () => (
-  <Layout>
+  <Layout title="Folta - Portfolio | Front End Developer">
     <section className="section">
       <h2 className="heading-primary page__heading">My portfolio</h2>
       <ProjectsList />

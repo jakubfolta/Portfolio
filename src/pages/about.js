@@ -10,15 +10,22 @@ class About extends Component {
     const data = this.props.data.allMarkdownRemark.edges[0].node;
 
     return (
-      <Layout>
+      <Layout title="Folta | Front End Developer">
         <section className="section">
           <h2 className="heading-primary page__heading">About me</h2>
-          <p className="section__text">{data.frontmatter.foreword}</p>
-          <p className="section__text">{data.frontmatter.extension}</p>
+          <p className="section__text">I'm <span className="highlight">Jacob</span>, passionate self-taught <br/>Web / Front-End Developer.</p><br/>
+          <p className="section__text">{data.frontmatter.extension1}</p>
+          <p className="section__text">{data.frontmatter.extension2}</p>
+          <p className="section__text">{data.frontmatter.extension3}</p>
+          <p className="section__text">{data.frontmatter.extension4}</p>
           <p className="section__text">{data.frontmatter.conclusion}</p>
+          <p className="section__text">My favorite quote</p>
+          <blockquote className="quote">{data.frontmatter.quote}</blockquote>
           <div className="buttons-container">
-            <a className="button" href={data.frontmatter.file.publicURL} alt="Source code" target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
+            <a className="button" href={data.frontmatter.cv.publicURL} alt="Resume" target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
           </div>
+          <p className="section__text">My current stack of languages / technologies:</p>
+          <p className="section__text">{data.frontmatter.stack}</p>
         </section>
         <Footer
           title="Intrigued?"
@@ -40,9 +47,20 @@ query AboutQuery {
         excerpt (pruneLength: 1000)
         frontmatter {
           foreword
-          extension
+          extension1
+          extension2
+          extension3
+          extension4
           conclusion
-          file {
+          quote
+          stack
+          cv {
+            publicURL
+          }
+          foundations {
+            publicURL
+          }
+          html {
             publicURL
           }
         }
@@ -51,3 +69,9 @@ query AboutQuery {
   }
 }
 `
+
+
+
+
+
+
