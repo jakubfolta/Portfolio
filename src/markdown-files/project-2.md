@@ -1,9 +1,9 @@
 ---
-title: "Yatsu"
+title: "Yatsu Webpage"
 image: "images/yatsu.png"
-technologies: ["React", "Gatsbygdfggd"]
+technologies: ["HTML5", "CSS3", "SASS", "FLEXBOX"]
 github: "https://github.com/jakubfolta/Webpage-Yatsu"
 demo: "https://jakubfolta.github.io/Webpage-Yatsu/"
 number: 2
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Ullamco laboris nisi ut aliquip.
+Example interface for all-in-one booking app. In this webpage I was practicing Flexbox. Page is fully responsive.

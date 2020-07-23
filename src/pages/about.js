@@ -28,7 +28,7 @@ class About extends Component {
 
           <a className="link" href={data.frontmatter.html.publicURL} target="_blank">CIW Advanced HTML5 and CSS3 Specialist</a> and CIW JavaScript Specialist certificates.</p><br/>
 
-          <p className="section__text">{data.frontmatter.extension3}</p><br/>
+          <p className="section__text">{data.frontmatter.extension}</p><br/>
 
           <p className="section__text">To document my journey I push all my code to <a className="link" href="https://github.com/jakubfolta" target="_blank" rel="noopener noreferrer">Github</a> and publish posts on <a className="link" href="https://www.instagram.com/jakub.folta/" target="_blank" rel="noopener noreferrer">Instagram.</a></p><br/>
 
@@ -60,9 +60,8 @@ query AboutQuery {
   ) {
     edges {
       node {
-        excerpt (pruneLength: 1000)
         frontmatter {
-          extension3
+          extension
           conclusion
           quote
           stack

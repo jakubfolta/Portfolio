@@ -1,9 +1,9 @@
 ---
-title: "Yatsu"
-image: "images/yatsu.png"
-technologies: ["React", "Gatsbygdfggd"]
-github: "https://github.com/jakubfolta/Webpage-Yatsu"
-demo: "https://jakubfolta.github.io/Webpage-Yatsu/"
+title: "Show me the budget"
+image: "images/showmebudget.png"
+technologies: ["Vanilla JavaScript"]
+github: "https://github.com/jakubfolta/ShowMeTheBudget"
+demo: "https://jakubfolta.github.io/ShowMeTheBudget/"
 number: 3
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+First app after finishing JavaScript course. You can add your incomes, expenses for given month and available budget with percentages will be displayed on the screen. Local storage and API call to change quote every day implemented. Application written with DRY principle and basics of OOP (IIFE).

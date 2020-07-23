@@ -1,9 +1,9 @@
 ---
-title: "Yatsu"
-image: "images/yatsu.png"
-technologies: ["React", "Gatsbygdfggd"]
-github: "https://github.com/jakubfolta/Webpage-Yatsu"
-demo: "https://jakubfolta.github.io/Webpage-Yatsu/"
+title: "Burger builder"
+image: "images/burgerbuilder.png"
+technologies: ["React", "Router", "Redux", "Firebase"]
+github: "https://github.com/jakubfolta/BurgerBuilder"
+demo: "https://jakubfolta.github.io/BurgerBuilder/"
 number: 4
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+Project created while going through the online course. A React app (Router, Redux, Hooks, Authentication) for building burger, sending order to firebase and fetching data to display it on a different route.
