@@ -18,7 +18,6 @@ const ContactForm = props => {
           <FaUser />
         </IconContext.Provider>
         <input
-          onFocus={props.onFocus}
           className={textClasses.join(' ')}
           type="text"
           name="name"
@@ -26,7 +25,8 @@ const ContactForm = props => {
           id="name"
           autoComplete="off"
           value={props.textValue}
-          onChange={props.change} />
+          onChange={props.change}
+          onFocus={props.onFocus} />
         <label
           className="form__label"
           htmlFor="name">Full name</label>
@@ -44,7 +44,8 @@ const ContactForm = props => {
           id="email"
           autoComplete="off"
           value={props.emailValue}
-          onChange={props.change} />
+          onChange={props.change}
+          onFocus={props.onFocus} />
         <label
           className="form__label"
           htmlFor="email">Email</label>
@@ -58,7 +59,8 @@ const ContactForm = props => {
           className="form__textarea"
           name="message"
           id="message"
-          placeholder="Message..."></textarea>
+          placeholder="Message..."
+          onFocus={props.onFocus}></textarea>
         <label
           className="form__label form__label--textarea"
           htmlFor="message">Message</label>
