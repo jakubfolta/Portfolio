@@ -34,14 +34,14 @@ class About extends Component {
 
           <p className="section__text">{data.frontmatter.conclusion}</p><br/>
 
-          <p className="section__text"><span className="highlight highlight--5">My favorite quote</span></p>
+          <p className="section__text quote-title"><span className="highlight highlight--5">My favorite quote</span></p>
           <blockquote className="quote">{data.frontmatter.quote}</blockquote>
+
+          <p className="section__text stack-title"><span className="highlight highlight--5">My stack of languages / technologies:</span></p>
+          <p className="section__text technologies">{data.frontmatter.stack}</p>
           <div className="buttons-container">
             <a className="button" href={data.frontmatter.cv.publicURL} target="_blank"><FaReadme /><span>Resume</span></a>
-          </div><br/>
-
-          <p className="section__text"><span className="highlight highlight--5">My stack of languages / technologies:</span></p>
-          <p className="section__text technologies">{data.frontmatter.stack}</p>
+          </div>
         </section>
         <Footer
           title="Intrigued?"

@@ -62,9 +62,6 @@ const ContactForm = props => {
           className="form__label form__label--textarea"
           htmlFor="message">Message</label>
       </div>
-
-      <input type="text" style={{visibility: "hidden"}} value="" name="_empty_field" readOnly />
-
       <input
         className={['form__submit', props.formIsValid ? 'form__submit--on' : '' ].join(' ')}
         type="submit"

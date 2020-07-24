@@ -22,7 +22,6 @@
     text-align: center;
     transition: transform ease .3s;
 
-
     &:first-child,
     &:nth-child(odd) { transform: translateX(-100%); }
 
@@ -37,10 +36,12 @@
 
   &__link:link,
   &__link:visited {
-  display: block;
-  text-decoration: none;
-  color: $color-primary;
-  padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+    color: $color-primary;
+    padding: 1rem 0;
+
+    &.active { color: $color-white; }
   }
 }
 
@@ -53,6 +54,8 @@
   &:first-child { transition-delay: .5s; }
   &:last-child { transition-delay: 1.4s; }
 }
+
+
 
 
 

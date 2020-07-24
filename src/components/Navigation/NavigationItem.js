@@ -4,7 +4,11 @@ import { Link } from 'gatsby';
 
 const NavigationItem = props => (
   <li className="navigation__item">
-    <Link to={props.link} className="navigation__link">{props.children}</Link>
+    <Link
+      exact
+      to={props.link}
+      activeClassName="active"
+      className="navigation__link">{props.children}</Link>
   </li>
 );
 

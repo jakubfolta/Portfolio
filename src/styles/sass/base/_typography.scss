@@ -8,13 +8,13 @@ body {
 input,
 textarea,
 button,
-button:focus,
 select,
-a,
-a:focus {
+a {
   -webkit-tap-highlight-color: transparent;
   outline: none !important;
 }
+
+// a:focus { border-bottom: 1px solid $color-primary; }
 
 .heading-primary {
   color: $color-white;
@@ -36,6 +36,9 @@ a:focus {
   display: inline-block;
   text-decoration: none;
   color: $color-tertiary;
+  // border-bottom: 1px solid transparent;
+  //
+  // &:focus { border-bottom: 1px solid $color-primary; }
 }
 
 .buttons-container {
