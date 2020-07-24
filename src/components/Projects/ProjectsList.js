@@ -14,7 +14,7 @@ const ProjectsList = () => {
           edges {
             node {
               id
-              excerpt
+              excerpt(pruneLength: 1000)
               frontmatter {
                 title
                 technologies

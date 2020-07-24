@@ -24,9 +24,9 @@ class About extends Component {
 
           <a className="link" href="https://www.udemy.com/the-complete-javascript-course/" target="_top">The Complete JavaScript Course 2020,</a>
 
-          <a className="link" href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_top">React - The Complete Guide (incl Hooks, React Router, Redux)</a> and read / watch countless articles and youtube tutorials about Front-end Development. Recently I also obtained <a className="link" href={data.frontmatter.foundations.publicURL} target="_blank">CIW Web Foundations Associate,</a>
+          <a className="link" href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_top">React - The Complete Guide (incl Hooks, React Router, Redux)</a> and read / watch countless articles and youtube tutorials about Front-end Development. Recently I also obtained <a className="link" href={data.frontmatter.foundations.publicURL} target="_blank" rel="noopener noreferrer">CIW Web Foundations Associate,</a>
 
-          <a className="link" href={data.frontmatter.html.publicURL} target="_blank">CIW Advanced HTML5 and CSS3 Specialist</a> and CIW JavaScript Specialist certificates.</p><br/>
+          <a className="link" href={data.frontmatter.html.publicURL} target="_blank" rel="noopener noreferrer">CIW Advanced HTML5 and CSS3 Specialist</a> and CIW JavaScript Specialist certificates.</p><br/>
 
           <p className="section__text">{data.frontmatter.extension}</p><br/>
 
@@ -40,7 +40,7 @@ class About extends Component {
           <p className="section__text stack-title"><span className="highlight highlight--5">My stack of languages / technologies:</span></p>
           <p className="section__text technologies">{data.frontmatter.stack}</p>
           <div className="buttons-container">
-            <a className="button" href={data.frontmatter.cv.publicURL} target="_blank"><FaReadme /><span>Resume</span></a>
+            <a className="button" href={data.frontmatter.cv.publicURL} target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
           </div>
         </section>
         <Footer

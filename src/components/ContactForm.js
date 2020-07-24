@@ -18,6 +18,7 @@ const ContactForm = props => {
           <FaUser />
         </IconContext.Provider>
         <input
+          onFocus={props.onFocus}
           className={textClasses.join(' ')}
           type="text"
           name="name"

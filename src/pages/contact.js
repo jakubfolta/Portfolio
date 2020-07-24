@@ -24,6 +24,8 @@ class Contact extends Component {
     validForm: false
   }
 
+  onFocusHandler = () => { window.scrollTo(0, 0); }
+
   checkValidity = (value, rules) => {
     let isValid = false;
 
@@ -65,6 +67,7 @@ class Contact extends Component {
           <h2 className="heading-primary page__heading">So, let's talk ;)</h2>
           <p className="section__text">Either you want to ask me about something or just to get my attention, fill up this complicated form below or simply send me an email to <a className="link" href="mailto:jakubfolta@yahoo.co.uk" target="_top">jakubfolta@yahoo.co.uk</a>.</p>
           <ContactForm
+            onFocus={this.onFocusHandler}
             textValue={form.name.value}
             textValid={form.name.valid}
             emailValue={form.email.value}
