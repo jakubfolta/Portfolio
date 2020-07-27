@@ -25,8 +25,9 @@ class Contact extends Component {
   }
 
   onFocusHandler = (e) => {
-    const focusedElement = document.getElementById(e.target.id);
-    const elementVerticalLength = focusedElement.parentElement.offsetTop;
+    const focusedElement = document.querySelector('form');
+    const elementVerticalLength = focusedElement.offsetTop;
+
     window.scrollTo(0, elementVerticalLength);
   }
 
