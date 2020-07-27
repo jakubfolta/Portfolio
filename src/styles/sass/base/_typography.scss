@@ -38,9 +38,9 @@ a:active {
   display: inline-block;
   text-decoration: none;
   color: $color-tertiary;
-  // border-bottom: 1px solid transparent;
-  //
-  // &:focus { border-bottom: 1px solid $color-primary; }
+  border-bottom: 2px solid transparent;
+
+  &:focus { border-bottom: 2px solid $color-primary; }
 }
 
 .buttons-container {

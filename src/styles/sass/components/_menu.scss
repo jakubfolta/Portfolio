@@ -8,11 +8,14 @@
   width: 5rem;
   height: 5rem;
   border: none;
+  border-bottom: 2px solid transparent;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
   z-index: 200;
   outline: none;
+
+  &:focus { border-bottom: 2px solid $color-primary; }
 
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;

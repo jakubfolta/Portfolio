@@ -20,9 +20,9 @@
   &__link {
     display: inline-block;
     text-decoration: none;
-    // border-bottom: 2px solid transparent;           // Set media
-    //
-    // &:focus { border-bottom: 2px solid $color-primary; }
+    border-bottom: 2px solid transparent;
+    
+    &:focus { border-bottom: 2px solid $color-primary; }
   }
 
   &__icon { font-size: 5rem; }
