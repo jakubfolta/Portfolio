@@ -30,7 +30,7 @@ class Contact extends Component {
     const paddingTop = 30;
 
     setTimeout(() => {
-      window.scrollTo(0, focusedElement - paddingTop);
+      window.scrollTo(0, focusedElement - 30);
     }, 1000)
   }
 
