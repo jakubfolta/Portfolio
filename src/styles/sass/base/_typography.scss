@@ -11,9 +11,10 @@ input,
 textarea,
 button:focus,
 button:active,
+a,
 a:focus,
 a:active {
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   outline: none;
   border: none;
 }
