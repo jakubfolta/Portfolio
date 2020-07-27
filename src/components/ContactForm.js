@@ -25,7 +25,7 @@ const ContactForm = props => {
           id="name"
           autoComplete="off"
           value={props.textValue}
-          onChange={props.change}
+          onChange={props.onChange}
           onFocus={props.onFocus} />
         <label
           className="form__label"
@@ -44,7 +44,7 @@ const ContactForm = props => {
           id="email"
           autoComplete="off"
           value={props.emailValue}
-          onChange={props.change}
+          onChange={props.onChange}
           onFocus={props.onFocus} />
         <label
           className="form__label"

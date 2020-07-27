@@ -7,9 +7,10 @@ body {
 
 input,
 textarea,
-button,
-select,
-a {
+button:focus,
+button:active,
+a:focus,
+a:active {
   -webkit-tap-highlight-color: transparent;
   outline: none !important;
 }
