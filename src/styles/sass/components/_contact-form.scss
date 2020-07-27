@@ -42,16 +42,9 @@
     border-bottom: 2px solid $color-secondary--light;
 
     &:focus { border-bottom: 2px solid $color-warning; }
-
     &--valid,
-    &--valid:focus {
-      border-bottom: 2px solid $color-primary;
-    }
-
-    &:user-invalid { border: 1px solid green; }
-    &:invalid {
-      box-shadow: none;
-      border: none; }
+    &--valid:focus { border-bottom: 2px solid $color-primary; }
+    &:invalid { box-shadow: none; }
   }
 
   &__input:placeholder-shown + &__label {
