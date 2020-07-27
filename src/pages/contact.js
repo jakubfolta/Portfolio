@@ -27,7 +27,7 @@ class Contact extends Component {
   onFocusHandler = (e) => {
     const focusedElement = document.getElementById(e.target.id).parentElement;
     const focusedElementVerticalLength = focusedElement.offsetTop;
-    const paddingTop = 10;
+    const paddingTop = 20;
 
     setTimeout(() => {
       window.scrollTo(0, focusedElement - paddingTop);
