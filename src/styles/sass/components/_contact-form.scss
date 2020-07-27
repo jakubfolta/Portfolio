@@ -83,12 +83,14 @@
     border-radius: 1rem;
     padding: .5rem 3rem;
     width: 70%;
-    transition: all .5s linear;
+    cursor:  not-allowed;
     opacity: .4;
+    transition: all .5s linear;
 
     &--on {
       color: $color-primary;
       box-shadow: .2rem .3rem 1rem $color-black, .2rem .3rem 3rem $color-primary;
+      cursor: pointer;
       opacity: 1;
       transition: all cubic-bezier(.5,1.99,.5,1.5) .5s;
     }

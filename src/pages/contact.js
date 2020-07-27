@@ -25,11 +25,9 @@ class Contact extends Component {
   }
 
   onFocusHandler = (e) => {
-    const formPosition = document.querySelector(".form").offsetTop;
-    const elementPosition = document.getElementById(e.target.id);
-    const elementParent = elementPosition.parentElement
-    // console.log(elementParent);
-    // window.scrollTo(0, 0);
+    const focusedElement = document.getElementById(e.target.id);
+    const elementVerticalLength = focusedElement.parentElement.offsetTop;
+    window.scrollTo(0, elementVerticalLength);
   }
 
   checkValidity = (value, rules) => {
