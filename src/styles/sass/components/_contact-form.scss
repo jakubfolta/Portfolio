@@ -47,15 +47,13 @@
     &--valid:focus {
       border-bottom: 2px solid $color-primary;
     }
+
+    &:user-invalid { border: none; }
   }
 
   &__input:placeholder-shown + &__label {
     transform: translate(4.2rem, -3rem);
     opacity: 0;
-  }
-
-  &__input:valid + &__submit {
-    color: $color-primary;
   }
 
   &__label {
