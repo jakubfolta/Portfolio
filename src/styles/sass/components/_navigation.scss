@@ -45,7 +45,8 @@
     &.active { color: $color-white; }
   }
 
-  &__link:active { border-bottom: 2px solid $color-primary; }
+  &__link:active,
+  &__link:focus { border-bottom: 2px solid $color-primary; }
 }
 
 .navigation.showNavigation .navigation__item {

@@ -25,14 +25,14 @@ class Contact extends Component {
   }
 
   onFocusHandler = (e) => {
-    const focusedElement = document.getElementById(e.target.id).parentElement.offsetTop;
-    setTimeout(() => {
-      window.scrollTo(0, focusedElement - 30);
+    const focusedElement = document.getElementById(e.target.id).parentElement;
+    const focusedElementVerticalLength = focusedElement.offsetTop;
+    const paddingTop = 10;
 
-      // console.log(focusedElement - 50);
-    },1000)
+    setTimeout(() => {
+      window.scrollTo(0, focusedElement - paddingTop);
+    }, 1000)
   }
-  // focusedElement.scrollIntoView(false);
 
   checkValidity = (value, rules) => {
     let isValid = false;

@@ -21,10 +21,10 @@ const NavigationList = props => {
       }} >
       <nav className="navigation">
         <ul className="navigation__list">
-          <NavigationItem show={props.show} link="/">Main haven</NavigationItem>
-          <NavigationItem show={props.show} link="/about">About me</NavigationItem>
-          <NavigationItem show={props.show} link="/portfolio">Portfolio</NavigationItem>
-          <NavigationItem show={props.show} link="/contact">Contact</NavigationItem>
+          <NavigationItem link="/">Main haven</NavigationItem>
+          <NavigationItem link="/about">About me</NavigationItem>
+          <NavigationItem link="/portfolio">Portfolio</NavigationItem>
+          <NavigationItem link="/contact">Contact</NavigationItem>
         </ul>
       </nav>
     </CSSTransition>

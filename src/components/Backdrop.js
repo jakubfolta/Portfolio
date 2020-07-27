@@ -18,7 +18,7 @@ const Backdrop = props => {
         enterActive: 'showBackdrop',
         enterDone: 'showBackdrop'
       }}>
-      <div role="button" tabIndex={0} onClick={props.clicked} onKeyDown={props.clicked} className="backdrop"></div>
+      <div role="button" tabIndex={1} onClick={props.clicked} onKeyDown={props.clicked} className="backdrop"></div>
     </CSSTransition>
   )
 };
