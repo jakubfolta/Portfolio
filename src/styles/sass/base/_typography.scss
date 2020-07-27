@@ -11,17 +11,12 @@ input,
 textarea,
 button:focus,
 button:active,
-
 a:focus,
 a:active {
-  background-color: rgba(0,0,0,0);
-
+  background-color: transparent;
   outline: none;
   border: none;
-  border-bottom: 2px solid $color-primary;
 }
-
-// a:focus { border-bottom: 1px solid $color-primary; }
 
 .heading-primary {
   color: $color-white;

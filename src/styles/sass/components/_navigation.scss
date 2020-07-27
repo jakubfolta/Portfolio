@@ -40,9 +40,12 @@
     text-decoration: none;
     color: $color-primary;
     padding: 1rem 0;
+    border-bottom: 2px solid transparent;
 
     &.active { color: $color-white; }
   }
+
+  &__link:active { border-bottom: 2px solid $color-primary; }
 }
 
 .navigation.showNavigation .navigation__item {
