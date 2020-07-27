@@ -17,6 +17,11 @@
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
 
+  &:active,
+  &:focus {
+    outline: none;  
+  }
+
   &__icon {
     position: relative;
 

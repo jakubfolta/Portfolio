@@ -48,7 +48,10 @@
       border-bottom: 2px solid $color-primary;
     }
 
-    &:user-invalid { border: none; }
+    &:user-invalid { border: 1px solid green; }
+    &:invalid {
+      box-shadow: none;
+      border: none; }
   }
 
   &__input:placeholder-shown + &__label {

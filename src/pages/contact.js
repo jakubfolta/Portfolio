@@ -25,11 +25,10 @@ class Contact extends Component {
   }
 
   onFocusHandler = (e) => {
-    const submitFocused = document.querySelector('.form__submit');
-    // const elementVerticalLength = focusedElement.parentElement.offsetTop;
-    console.log(submitFocused);
+    const focusedElement = document.querySelector('.form__submit');
+    console.log(focusedElement);
     setTimeout(() => {
-      submitFocused.scrollIntoView();
+      focusedElement.scrollIntoView(false);
     },500)
   }
 
