@@ -27,11 +27,11 @@ class Contact extends Component {
   onFocusHandler = (e) => {
     const focusedElement = document.getElementById(e.target.id).parentElement;
     const focusedElementVerticalLength = focusedElement.offsetTop;
-    const paddingTop = 40;
+    const paddingTop = 35;
 
     setTimeout(() => {
       window.scrollTo(0, focusedElementVerticalLength - paddingTop);
-    }, 100)
+    }, 1000)
   }
 
   checkValidity = (value, rules) => {
