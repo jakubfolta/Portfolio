@@ -31,7 +31,7 @@ class Contact extends Component {
 
     setTimeout(() => {
       window.scrollTo(0, focusedElementVerticalLength - paddingTop);
-    }, 500)
+    }, 1000)
   }
 
   checkValidity = (value, rules) => {
