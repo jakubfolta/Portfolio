@@ -69,7 +69,7 @@ const ContactForm = props => {
         className={['form__submit', props.formIsValid ? 'form__submit--on' : '' ].join(' ')}
         type="submit"
         value="Send"
-        disabled="{!props.formIsValid}" />
+        disabled={!props.formIsValid} />
     </form>
   )
 };
