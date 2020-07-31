@@ -9,6 +9,8 @@
   animation: appear 2s ease .75s;
   animation-fill-mode: backwards;
 
+  &__text:not(:last-of-type) { margin-bottom: 2rem;}
+
   &--home,
   &--thanks { height: 100vh; }
 }
