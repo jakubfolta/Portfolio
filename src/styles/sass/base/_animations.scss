@@ -80,29 +80,19 @@
 }
 
 @keyframes flash {
-  0% {
-    transform: translate(-5vh, -60vh);
-    color: $color-flash1;
-  }
+  0% { transform: translate(-5vh, -60vh); }
+  30% { transform: translate(-50vh, -20vh); }
+  50% { transform: translate(-15vh, 50vh); }
+  70% { transform: translate(20vh, -11vh); }
+  80% { transform: translate(0vh, 3vh); }
+  100% { transform: translate(0); }
+}
 
-  30% {
-    transform: translate(-50vh, -20vh);
-    color: $color-flash2;
-  }
-
-  50% {
-    transform: translate(-15vh, 50vh);
-    color: $color-warning;
-  }
-
-  70% {
-    transform: translate(20vh, -11vh);
-    color: $color-primary;
-  }
-
-  80% {
-    transform: translate(-1vh, 3vh);
-    color: $color-primary;
-  }
+@keyframes flash-desktop {
+  0% { transform: translate(-5vw, -60vh); }
+  30% { transform: translate(-65vw, -5vh); }
+  50% { transform: translate(-5vw, 60vh); }
+  70% { transform: translate(50vw, 0vh); }
+  80% { transform: translate(0vw, 3vh); }
   100% { transform: translate(0); }
 }

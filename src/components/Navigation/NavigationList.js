@@ -22,9 +22,9 @@ const NavigationList = props => {
       <nav className="navigation">
         <ul className="navigation__list">
           <NavigationItem link="/">Main haven</NavigationItem>
-          <NavigationItem link="/about">About me</NavigationItem>
-          <NavigationItem link="/portfolio">Portfolio</NavigationItem>
-          <NavigationItem link="/contact">Contact</NavigationItem>
+          <NavigationItem link="/about/">About me</NavigationItem>
+          <NavigationItem link="/portfolio/">Portfolio</NavigationItem>
+          <NavigationItem link="/contact/">Contact</NavigationItem>
         </ul>
       </nav>
     </CSSTransition>
