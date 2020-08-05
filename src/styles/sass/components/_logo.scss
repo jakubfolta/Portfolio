@@ -1,5 +1,13 @@
-.logo {
+.logo__container {
   position: absolute;
   top: 5%;
-  left: 5%;
+  left: 10%;
+  width: 5rem;
+
+  animation: scaleUp 1s linear 1s;
+  animation-fill-mode: backwards;
+}
+
+.logo__image {
+  width: 100%;
 }
