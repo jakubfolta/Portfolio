@@ -1,11 +1,16 @@
 .logo__container {
   position: absolute;
   top: 5%;
-  left: 10%;
+  left: 5%;
   width: 5rem;
 
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
+
+  @include respond(desktop) {
+    top: 3%;
+    left: 3%;
+  }
 }
 
 .logo__image {

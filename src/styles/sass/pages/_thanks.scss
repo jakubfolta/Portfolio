@@ -10,7 +10,7 @@
     animation-fill-mode: backwards;
     display: inline-block;
 
-    @media screen and (min-width: 800px) {
+    @include respond(tab-land) {
       animation: flash-desktop .5s ease-out 2.5s;
       animation-fill-mode: backwards;
     }

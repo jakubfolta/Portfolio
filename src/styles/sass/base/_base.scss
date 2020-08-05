@@ -10,6 +10,26 @@ html {
   font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+
+  @include respond(phone) {
+    font-size: 68.75% // 1rem = 11px
+  }
+
+  @include respond(tab-port) {
+    font-size: 75% // 1rem = 12px
+  }
+
+  @include respond(tab-land) {
+    font-size: 81.25% // 1rem = 13px
+  }
+
+  @include respond(desktop) {
+    font-size: 87.5% // 1rem = 14px
+  }
+
+  @include respond(big-desktop) {
+    font-size: 93.75% // 1rem = 15px
+  }
 }
 
 body { box-sizing: border-box; }

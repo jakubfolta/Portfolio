@@ -13,4 +13,9 @@
 
   &--home,
   &--thanks { height: 100vh; }
+
+  @include respond(tab-port) { max-width: 50rem; }
+  @include respond(tab-land) { max-width: 60rem; }
+  @include respond(desktop) { max-width: 80rem; }
+  @include respond(big-desktop) { max-width: 110rem; }
 }

@@ -15,10 +15,18 @@
   z-index: 200;
   outline: none;
 
-  &:focus { border-bottom: 2px solid $color-primary; }
-
   animation: scaleUp 1s linear 1s;
   animation-fill-mode: backwards;
+
+  @include respond(desktop) {
+    top: 1%;
+    right: 1%;
+    width: 7rem;
+    height: 7rem;
+
+    &:focus,
+    &:hover { border-bottom: 2px solid $color-primary; }
+  }
 
   &__icon {
     position: relative;
