@@ -1,6 +1,6 @@
 .logo__container {
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 5%;
   width: 5rem;
 
@@ -9,10 +9,8 @@
 
   @include respond(desktop) {
     top: 3%;
-    left: 3%;
+    left: 2%;
   }
 }
 
-.logo__image {
-  width: 100%;
-}
+.logo__image { width: 100%; }

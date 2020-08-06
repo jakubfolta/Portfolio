@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
 
+  @include respond(desktop) { width: auto; }
+
   &__list {
     position: relative;
     display: flex;
@@ -13,16 +15,17 @@
     line-height: 0;
     margin-left: 5%;
     background-color: $color-white;
-    animation: moveInLeft 1s ease .75s;
-    animation-fill-mode: backwards;
   }
 
   &__link {
     display: inline-block;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    
-    &:focus { border-bottom: 2px solid $color-primary; }
+
+    @include respond(desktop) {
+      &:focus,
+      &:hover { border-bottom: 2px solid $color-primary; }
+    }
   }
 
   &__icon { font-size: 5rem; }
@@ -34,7 +37,19 @@
   left: 5%;
   font-size: $small-font-size;
   color: $color-secondary--light;
+}
+
+.socials__list,
+.followMe {
   animation: moveInLeft 1s ease .75s;
   animation-fill-mode: backwards;
+
+  @include respond(desktop) {
+    margin-left: auto;
+    left: auto;
+
+    animation: moveInBottom 1s ease .75s;
+    animation-fill-mode: backwards;
+  }
 }
 
