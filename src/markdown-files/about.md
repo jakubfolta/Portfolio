@@ -8,4 +8,5 @@ GIT – SASS – NPM – WEBPACK – BOOTSTRAP - REACTJS - REDUX - CSS MODULES -
 cv: "./files/CV-JakubFolta.pdf"
 foundations: "./files/CIWFoundations.pdf"
 html: "./files/CIWHTML.pdf"
+js: "./files/CIWJavaScript.pdf"
 ---

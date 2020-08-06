@@ -26,7 +26,7 @@ class About extends Component {
 
           <a className="link" href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_top">React - The Complete Guide (incl Hooks, React Router, Redux)</a> and read / watch countless articles and youtube tutorials about Front-end Development. Recently I also obtained <a className="link" href={data.frontmatter.foundations.publicURL} target="_blank" rel="noopener noreferrer">CIW Web Foundations Associate,</a>
 
-          <a className="link" href={data.frontmatter.html.publicURL} target="_blank" rel="noopener noreferrer">CIW Advanced HTML5 and CSS3 Specialist</a> and CIW JavaScript Specialist certificates.</p>
+          <a className="link" href={data.frontmatter.html.publicURL} target="_blank" rel="noopener noreferrer">CIW Advanced HTML5 and CSS3 Specialist</a> and <a className="link" href={data.frontmatter.js.publicURL} target="_blank" rel="noopener noreferrer">CIW JavaScript Specialist</a> certificates.</p>
 
           <p className="section__text">{data.frontmatter.extension}</p>
 
@@ -72,6 +72,9 @@ query AboutQuery {
             publicURL
           }
           html {
+            publicURL
+          }
+          js {
             publicURL
           }
         }
