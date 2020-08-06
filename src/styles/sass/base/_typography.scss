@@ -5,7 +5,7 @@ body {
   color: $color-secondary--light;
 }
 
-button::-moz-focus-inner { border: none; }
+::-moz-focus-inner { border: none; }
 
 input,
 textarea,
@@ -64,8 +64,9 @@ a:active {
 
   & span { margin-left: 1rem; }
 
-  @media only screen and (min-width: 800px) and (hover: hover) {
-    &:hover {
+  @include respond(desktop) {
+    &:hover,
+    &:focus {
       color: $color-primary;
       transform: translateY(-.2rem);
     }

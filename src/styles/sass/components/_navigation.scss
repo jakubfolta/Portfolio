@@ -32,7 +32,12 @@
     &:nth-child(odd) { transition-delay: .6s; }
     &:first-child { transition-delay: 1.2s; }
     &:last-child { transition-delay: .3s; }
+
+    @include respond(desktop) {
+      display: flex;
+      justify-content: center;
     }
+  }
 
   &__link:link,
   &__link:visited {
@@ -42,11 +47,17 @@
     padding: 1rem 0;
     border-bottom: 2px solid transparent;
 
-    &.active { color: $color-white; }
-  }
+    &:active { border-bottom: 2px solid $color-primary; }
 
-  &__link:active,
-  &__link:focus { border-bottom: 2px solid $color-primary; }
+    &.active { color: $color-white; }
+
+    @include respond(desktop) {
+      width: 50%;
+
+      &:focus,
+      &:hover { border-bottom: 2px solid $color-primary; }
+    }
+  }
 }
 
 .navigation.showNavigation .navigation__item {
