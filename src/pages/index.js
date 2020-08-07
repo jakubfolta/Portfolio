@@ -14,7 +14,9 @@ const HomeIndex = () => (
       <h1 className="heading-primary">Hello, my name is Jakub Folta.</h1>
       <p className="section__text">I am passionate Front End Developer based in London. <br />Take a look at my <Link to="/portfolio" className="link" title="Check my projects">web portfolio page</Link> or send me an <a className="link" href="mailto:jakubfolta@yahoo.co.uk" target="_top">email</a>.</p>
     </section>
-    <ArrowRight />
+    <ArrowRight
+      page="/about/"
+      pageName="About"/>
   </Layout>
 )
 

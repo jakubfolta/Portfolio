@@ -7,7 +7,8 @@ const ArrowRight = props => (
     <Link
       to={props.page}
       className="arrow__container-link">
-      <span className="arrow__right">{props.pageName}</span>
+      <span className="arrow__right"></span>
+      <span className="arrow__title">{props.pageName}</span>
       </Link>
   </div>
 )
