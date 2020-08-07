@@ -32,6 +32,23 @@
   }
 }
 
+@keyframes moveInSocials {
+  0% {
+    opacity: 0;
+    transform: translateX(-16rem);
+  }
+
+  80% {
+    opacity: .8;
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;

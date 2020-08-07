@@ -41,7 +41,7 @@
 
 .socials__list,
 .followMe {
-  animation: moveInLeft 1s ease .75s;
+  animation: moveInSocials 1s ease .75s;
   animation-fill-mode: backwards;
 
   @include respond(desktop) {
