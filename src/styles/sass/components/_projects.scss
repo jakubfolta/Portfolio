@@ -10,16 +10,48 @@
     flex-direction: column;
     margin-bottom: 3rem;
 
+    @include respond(desktop) { margin-bottom: 5rem; }
+
     &-title {
       font-size: $big-font-size;
       color: $color-primary;
       margin-bottom: 1rem;
       letter-spacing: .3rem;
+
+      @include respond(desktop) { margin-bottom: 2rem; }
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+
+      @include respond(desktop) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
     }
   }
 
-  &__image-container { margin: 1rem 0; }
-  &__description-text { padding: 0 2rem; }
+  &__image-container {
+    margin: 1rem 0;
+    box-shadow: 0 0 1rem 0 $color-white;
+
+    @include respond(desktop) {
+      flex: 0 0 50%;
+      margin: 0;
+    }
+  }
+
+  &__description-text {
+    padding: 0 2rem;
+
+    @include respond(desktop) {
+      font-size: $small-font-size;
+      margin-left: 3rem;
+    }
+
+    @include respond(big-desktop) { font-size: $default-font-size; }
+  }
 
   &__description-technologies {
     font-family: sans-serif;

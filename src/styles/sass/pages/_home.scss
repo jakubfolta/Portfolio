@@ -13,8 +13,11 @@
 
   &--home,
   &--thanks { height: 100vh; }
+}
 
-  @include respond(tab-port) { 
+.section,
+.footer {
+  @include respond(tab-port) {
     max-width: 500px;
     padding: 0;
   }

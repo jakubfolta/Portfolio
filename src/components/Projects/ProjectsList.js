@@ -22,8 +22,9 @@ const ProjectsList = () => {
                 demo
                 image {
                   childImageSharp {
-                    fluid (maxWidth: 600, quality: 100){
+                    fluid (maxWidth: 800, quality: 100){
                       ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluidLimitPresentationSize
                     }
                   }
                 }
