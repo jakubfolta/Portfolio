@@ -1,13 +1,18 @@
 import React from 'react';
 
-import { Link } from 'gatsby';
+import TransitionLink from 'gatsby-plugin-transition-link';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const NavigationItem = props => (
   <li className="navigation__item">
-    <Link
+    <AniLink
+      fade
+      direction="up"
+      top="exit"
+      duration={.5}
       to={props.link}
       activeClassName="active"
-      className="navigation__link">{props.children}</Link>
+      className="navigation__link">{props.children}</AniLink>
   </li>
 );
 
