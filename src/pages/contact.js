@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Layout from '../containers/Layout';
 import ContactForm from '../components/ContactForm';
+import ArrowLeft from '../components/Arrows/ArrowLeft';
 
 class Contact extends Component {
   state = {
@@ -83,6 +84,9 @@ class Contact extends Component {
             onFocus={e => this.onFocusHandler(e)}
             formIsValid={this.state.validForm} />
         </section>
+        <ArrowLeft
+          page="/portfolio/"
+          pageName="Portfolio" />
       </Layout>
     )
   }

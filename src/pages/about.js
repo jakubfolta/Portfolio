@@ -4,6 +4,8 @@ import { graphql } from 'gatsby';
 import Layout from '../containers/Layout';
 import Footer from '../components/Footer';
 import { FaReadme } from 'react-icons/fa';
+import ArrowRight from '../components/Arrows/ArrowRight';
+import ArrowLeft from '../components/Arrows/ArrowLeft';
 
 class About extends Component {
   render() {
@@ -46,6 +48,12 @@ class About extends Component {
         <Footer
           title="Intrigued?"
           text="Wanna talk about my path or get some more information? Feel free to drop me an email at" />
+        <ArrowRight
+          page="/portfolio/"
+          pageName="Portfolio" />
+        <ArrowLeft
+          page="/"
+          pageName="Main" />
       </Layout>
     )
   }
