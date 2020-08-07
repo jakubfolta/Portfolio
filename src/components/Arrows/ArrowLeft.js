@@ -6,8 +6,8 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 const ArrowLeft = props => (
   <div className="arrow__container arrow__container--left">
     <AniLink
-      swipe
-      direction="right"
+      fade
+      duration={1.3}
       to={props.page}
       className="arrow__container-link">
       <span className="arrow arrow--left"></span>

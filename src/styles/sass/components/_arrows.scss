@@ -1,9 +1,9 @@
 .arrow__container {
-  position: absolute;
+  position: fixed;
   top: 50vh;
   transform: translate(0, -50%);
   width: 10rem;
-  height: 50rem;
+  height: 20rem;
   display: none;
 
   @media only screen and (min-width: 43.75em) { display: block; }

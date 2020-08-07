@@ -39,7 +39,10 @@ a:active {
   color: $color-tertiary;
   border-bottom: 2px solid transparent;
 
-  &:focus { border-bottom: 2px solid $color-primary; }
+  @include respond(desktop) {
+    &:focus,
+    &:hover { border-bottom: 2px solid $color-primary; }
+  }
 }
 
 .buttons-container {

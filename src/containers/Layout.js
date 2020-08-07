@@ -25,15 +25,15 @@ class Layout extends Component {
           <meta charSet="utf-8" />
           <title>{this.props.title}</title>
         </Helmet>
-        <Menu
-          show={this.state.menuClicked}
-          clicked={this.navVisibilityHandler} />
         <Backdrop
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
         <NavigationList show={this.state.menuClicked} />
         <main className="layout">
           {this.props.children}
+          <Menu
+            show={this.state.menuClicked}
+            clicked={this.navVisibilityHandler} />
         </main>
       </Fragment>
     )
