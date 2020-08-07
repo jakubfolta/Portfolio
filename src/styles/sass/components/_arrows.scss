@@ -78,7 +78,7 @@
   height: 1rem;
   border-radius: 50%;
   transform: rotate(0deg) scale(.6);
-  transition: all .3s ease;
+  transition: all .5s ease-in;
 
   &--right,
   &--left {
@@ -91,7 +91,7 @@
       width: 2.5rem;
       height: 1rem;
       border-bottom: 3px solid $color-tertiary;
-      transition: all .3s ease;
+      transition: all .5s ease-in;
     }
 
     &::before {
@@ -128,7 +128,7 @@
 
 .arrow__title {
   position: fixed;
-  transition: all .5s ease;
+  transition: all .5s ease-in;
 
 
   &--right {
