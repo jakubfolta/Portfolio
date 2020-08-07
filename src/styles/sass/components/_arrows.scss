@@ -1,14 +1,25 @@
 .arrow__container {
   position: fixed;
-  right: 0;
   width: 10rem;
   height: 50rem;
   display: none;
 
-  animation: moveInRight 1s ease 1.5s;
-  animation-fill-mode: backwards;
-
   @media only screen and (min-width: 40.62em) { display: block; }
+
+  &--right {
+    right: 0;
+
+    animation: moveInRight 1s ease 1.5s;
+    animation-fill-mode: backwards;
+  }
+
+  &--left {
+    left: 0;
+
+    animation: moveInLeft 1s ease 1.5s;
+    animation-fill-mode: backwards;
+  }
+
 
   &-link:link,
   &-link:visited {
@@ -21,67 +32,114 @@
     align-items: center;
     color: $color-tertiary;
 
-    &:hover .arrow__right {
-      transform: rotate(-30deg) translate(-1.5rem, -1rem) scale(.6);
+    &:hover .arrow {
       border-color: $color-primary;
 
-      @include respond(tab-land) { transform: rotate(-30deg) translate(-1.5rem, -1rem) scale(1); }
+      &--right {
+        transform: rotate(-30deg) translate(-1.5rem, -1rem) scale(.6);
+
+        @include respond(tab-land) { transform: rotate(-30deg) translate(-1.5rem, -1rem) scale(1); }
+      }
+
+      &--left {
+        transform: rotate(-20deg) translate(1.5rem, 1rem) scale(.6);
+
+        @include respond(tab-land) { transform: rotate(30deg) translate(1.5rem, 1rem) scale(1); }
+      }
+
     }
-    &:hover .arrow__right::before,
-    &:hover .arrow__right::after { border-color: $color-primary; }
+    &:hover .arrow::before,
+    &:hover .arrow::after { border-color: $color-primary; }
     &:hover .arrow__title {
-      transform: rotate(0) translate(-1rem, 3rem) scale(.6);
       color: $color-primary;
 
-      @include respond(tab-land) { transform: rotate(0) translate(-1rem, 3rem) scale(1); }
+      &--right {
+        transform: rotate(0) translate(-1rem, 3rem) scale(.6);
+
+        @include respond(tab-land) { transform: rotate(0) translate(-1rem, 3rem) scale(1); }
+      }
+
+      &--left {
+        transform: rotate(0) translate(1rem, -3rem) scale(.6);
+
+        @include respond(tab-land) { transform: rotate(0) translate(1rem, -3rem) scale(1); }
+      }
+
     }
   }
 }
 
-.arrow__right {
+.arrow {
   position: relative;
   display: inline-block;
   width: 4rem;
   height: 1rem;
   border-radius: 50%;
-  border-top: 3px solid $color-tertiary;
-  border-left: 3px solid $color-tertiary;
-  transform: rotate(-10deg) scale(.6);
+  transform: rotate(0deg) scale(.6);
   transition: all .3s ease;
+
+  &--right,
+  &--left {
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2.5rem;
+      height: 1rem;
+      border-bottom: 3px solid $color-tertiary;
+      transition: all .3s ease;
+    }
+
+    &::before {
+      top: -2rem;
+      width: 3rem;
+      border-radius: 50%;
+    }
+    &::after {
+      top: 2rem;
+      border-radius: 30%;
+    }
+  }
+
+  &--right {
+    border-top: 3px solid $color-tertiary;
+    border-left: 3px solid $color-tertiary;
+
+    &::before { transform: rotate(40deg) translate(2.1rem, -.8rem); }
+    &::after { transform: rotate(145deg) translate(-2.4rem, 0rem); }
+  }
+
+  &--left {
+    border-bottom: 3px solid $color-tertiary;
+    border-right: 3px solid $color-tertiary;
+
+    &::before { transform: rotate(-30deg) translate(-3rem, -.3rem); }
+    &::after { transform: rotate(220deg) translate(3rem, -1.4rem); }
+  }
 
   @include respond(tab-land) { transform: rotate(-10deg) scale(1); }
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2.5rem;
-    height: 1rem;
-    border-bottom: 3px solid $color-tertiary;
-    transition: all .3s ease;
-  }
 
-  &::before {
-    top: -2rem;
-    width: 3rem;
-    border-radius: 50%;
-    transform: rotate(60deg) translate(2rem, -1.7rem);
-  }
-
-  &::after {
-    top: 2rem;
-    border-radius: 30%;
-    transform: rotate(160deg) translate(-2rem, .5rem);
-  }
 }
 
 .arrow__title {
   position: fixed;
-  transform: rotate(-90deg) translate(-1.8rem, -.5rem) scale(0);
   transition: all .5s ease;
 
-  @media only screen and (hover: none) { transform: rotate(0) translate(0rem, 2rem) scale(.6); }
-  @media only screen and (hover: none) and (min-width: 56.25em) { transform: rotate(0) translate(0rem, 3rem) scale(1); }
+
+  &--right {
+    transform: rotate(-90deg) translate(-1.8rem, -.5rem) scale(0);
+
+    @media only screen and (hover: none) { transform: rotate(0) translate(0rem, 2rem) scale(.6); }
+    @media only screen and (hover: none) and (min-width: 56.25em) { transform: rotate(0) translate(0rem, 3rem) scale(1); }
+  }
+
+  &--left {
+    transform: rotate(-90deg) translate(1.8rem, .5rem) scale(0);
+
+    @media only screen and (hover: none) { transform: rotate(0) translate(0rem, -2rem) scale(.6); }
+    @media only screen and (hover: none) and (min-width: 56.25em) { transform: rotate(0) translate(0rem, -3rem) scale(1); }
+  }
 }

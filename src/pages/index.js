@@ -5,6 +5,7 @@ import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
 import Socials from '../components/Socials';
 import ArrowRight from '../components/Arrows/ArrowRight';
+import ArrowLeft from '../components/Arrows/ArrowLeft';
 
 const HomeIndex = () => (
   <Layout title="Folta | Front End Developer">
@@ -17,6 +18,9 @@ const HomeIndex = () => (
     <ArrowRight
       page="/about/"
       pageName="About"/>
+    <ArrowLeft
+      page="/"
+      pageName="Main"/>
   </Layout>
 )
 
