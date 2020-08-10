@@ -1,6 +1,5 @@
 import React from 'react';
 
-import TransitionLink from 'gatsby-plugin-transition-link';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
