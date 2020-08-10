@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Folta | Front End Developer',
+    description: `Front End Developer Portfolio`,
     author: 'Jakub Folta'
   },
   plugins: [
@@ -22,6 +23,7 @@ module.exports = {
         icon: `src/assets/logo.png`,
       }
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
-import { Helmet } from "react-helmet";
 
 import '../styles/sass/main.scss';
 import 'typeface-architects-daughter';
 import Menu from '../components/Menu';
 import Backdrop from '../components/Backdrop';
 import NavigationList from '../components/Navigation/NavigationList';
+import SEO from '../components/SEO';
 
 class Layout extends Component {
   state = {
@@ -21,10 +21,7 @@ class Layout extends Component {
   render() {
     return (
       <Fragment>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>{this.props.title}</title>
-        </Helmet>
+        <SEO title={this.props.title} />
         <Backdrop
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
