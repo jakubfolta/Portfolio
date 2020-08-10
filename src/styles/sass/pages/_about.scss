@@ -44,6 +44,7 @@
 .stack-title { font-weight: bold; }
 
 .quote {
+  max-width: 51%;
   color: $color-white;
   font-style: italic;
   padding: 0 0 2rem;
@@ -53,4 +54,6 @@
   font-size: $small-font-size;
   color: $color-white;
   font-weight: bold;
+
+  @include respond(desktop) { max-width: 60%; }
 }

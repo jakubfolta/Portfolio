@@ -10,9 +10,9 @@ const Menu = props => {
   }
 
   return (
-    <button className={classes.join(' ')} onClick={props.clicked}>
-      <span className="menu__icon">&nbsp;</span>
-    </button>
+    <div className={classes.join(' ')} onClick={props.clicked}>
+      <span className="menu__icon"></span>
+    </div>
   )
 };
 

@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Folta | Front End Developer',
     description: `Front End Developer Portfolio`,
-    author: 'Jakub Folta'
+    author: 'Jakub Folta',
+    siteUrl: `https://folta.me`
   },
   plugins: [
     `gatsby-plugin-sass`,

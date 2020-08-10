@@ -10,19 +10,32 @@ const SocialsList = () => (
   <Fragment>
     <p className="followMe">Follow me</p>
     <ul className="socials__list">
-      <SocialsItem link="https://www.facebook.com/jakub.folta.58/" color="#3B5998">
+      <SocialsItem
+        link="https://www.facebook.com/jakub.folta.58/" color="#3B5998"
+        title="Follow on Facebook"
+        value="Follow on Facebook">
         <FaFacebookSquare />
       </SocialsItem>
 
-      <SocialsItem link="https://github.com/jakubfolta" color="#24292e">
+      <SocialsItem
+        link="https://github.com/jakubfolta"
+        color="#24292e"
+        title="Follow on Github"
+        value="Follow on Github">
         <FaGithubSquare />
       </SocialsItem>
 
-      <SocialsItem link="https://www.linkedin.com/in/jakubfolta/" color="#0E76A8">
+      <SocialsItem
+        link="https://www.linkedin.com/in/jakubfolta/" color="#0E76A8"
+        title="Follow on LinkedIn"
+        value="Follow on LinkedIn">
         <FaLinkedin />
       </SocialsItem>
 
-      <SocialsItem link="https://www.instagram.com/jakub.folta/" color="#125688">
+      <SocialsItem
+        link="https://www.instagram.com/jakub.folta/" color="#125688"
+        title="Follow on Instagram"
+        value="Follow on Instagram">
         <FaInstagramSquare />
       </SocialsItem>
     </ul>

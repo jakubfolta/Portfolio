@@ -19,8 +19,15 @@
 
   &__link {
     display: inline-block;
+    height: 5rem;
+    width: 5rem;
     text-decoration: none;
     border-bottom: 2px solid transparent;
+
+    & span {
+      display: block;
+      text-indent: -9999rem;
+    }
 
     @include respond(desktop) {
       &:focus,
