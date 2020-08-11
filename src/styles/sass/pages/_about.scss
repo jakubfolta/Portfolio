@@ -44,10 +44,11 @@
 .stack-title { font-weight: bold; }
 
 .quote {
-  max-width: 51%;
   color: $color-white;
   font-style: italic;
   padding: 0 0 2rem;
+
+  @include respond(tab-land) { max-width: 50%; }
 }
 
 .technologies {
