@@ -5,6 +5,7 @@ conclusion: "I know that the best way to learn is to work with real projects in 
 quote: '" Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway. "'
 stack: "HTML5 - CSS3 - JAVASCRIPT – PYTHON3 -
 GIT – SASS – NPM – WEBPACK – BOOTSTRAP - REACTJS - REDUX - CSS MODULES - FIREBASE - GRAPHQL - GATSBY"
+activity: "At the moment I study the next module in my course which is User Interface Design and prepare myself for the exam to obtain CIW certificate. After that, I will learn about PHP and MySQL Development and create another project to my portfolio which probably will be Movie/Game Library. I'm thinking also about adding some cool features to my portfolio page ;)"
 cv: "./files/CV-JakubFolta.pdf"
 foundations: "./files/CIWFoundations.pdf"
 html: "./files/CIWHTML.pdf"

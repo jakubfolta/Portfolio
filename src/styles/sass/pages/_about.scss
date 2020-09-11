@@ -41,7 +41,8 @@
 }
 
 .quote-title,
-.stack-title { font-weight: bold; }
+.stack-title,
+.activity-title { font-weight: bold; }
 
 .quote {
   color: $color-white;
@@ -51,10 +52,16 @@
   @include respond(tab-land) { max-width: 50%; }
 }
 
-.technologies {
+.technologies,
+.activity {
   font-size: $small-font-size;
   color: $color-white;
   font-weight: bold;
 
   @include respond(desktop) { max-width: 60%; }
+}
+
+.activity {
+  font-size: $default-font-size;
+  font-weight: normal;
 }

@@ -39,8 +39,12 @@ class About extends Component {
           <p className="section__text quote-title"><span className="highlight highlight--5">My favorite quote</span></p>
           <blockquote className="quote">{data.frontmatter.quote}</blockquote>
 
+          <p className="section__text activity-title"><span className="highlight highlight--5">Current activity</span></p>
+          <p className="section__text activity">{data.frontmatter.activity}</p>
+
           <p className="section__text stack-title"><span className="highlight highlight--5">My stack of languages / technologies:</span></p>
           <p className="section__text technologies">{data.frontmatter.stack}</p>
+
           <div className="buttons-container">
             <a className="button" href={data.frontmatter.cv.publicURL} target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
           </div>
@@ -73,6 +77,7 @@ query AboutQuery {
           conclusion
           quote
           stack
+          activity
           cv {
             publicURL
           }
