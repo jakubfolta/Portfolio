@@ -14,17 +14,6 @@
     animation-fill-mode: backwards;
   }
 
-  &--1::before,
-  &--1::after {animation-delay: 2s;}
-  &--2::before,
-  &--2::after {animation-delay: 2.7s;}
-  &--3::before,
-  &--3::after {animation-delay: 5s;}
-  &--4::before,
-  &--4::after {animation-delay: 5.7s;}
-  &--5::before,
-  &--5::after {animation-delay: 7s;}
-
   &::before {
     top: 0;
     left: -.5rem;
@@ -38,6 +27,19 @@
     border-bottom: .2rem solid $color-primary;
     border-right: .2rem solid $color-primary;
   }
+
+  &--1::before,
+  &--1::after { animation-delay: 2s; }
+  &--2::before,
+  &--2::after { animation-delay: 2.7s; }
+  &--3::before,
+  &--3::after { animation-delay: 5s; }
+  &--4::before,
+  &--4::after { animation-delay: 5.7s; }
+  &--5::before,
+  &--5::after { animation-delay: 7s; }
+
+  &--stack { display: inline; }
 }
 
 .quote-title,
