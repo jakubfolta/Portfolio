@@ -10,6 +10,8 @@
   overflow: hidden;
 
   &__list {
+    font-family: 'architects daughter', cursive;
+    font-size: $huge-font-size;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -17,7 +19,6 @@
   }
 
   &__item {
-    font-size: $huge-font-size;
     letter-spacing: .3rem;
     text-align: center;
     transition: transform ease .3s;

@@ -19,16 +19,17 @@ class About extends Component {
 
           <p className="section__text">In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in <span className="highlight highlight--3">code</span>. From that moment on I started my journey with my new <span className="highlight highlight--4">passion</span>.</p>
 
-          <p className="section__text">I've worked through many courses like: <a className="link" href="https://kodilla.com/en/bootcamp/webdeveloper?type=wdp" target="_top">Kodilla (Web Developer Bootcamp),</a>
+          <p className="section__text">I've worked through many courses like: <a className="link" href="https://kodilla.com/en/bootcamp/webdeveloper?type=wdp" target="_top">Kodilla (Web Developer Bootcamp)</a>,&nbsp;
 
           <a className="link" href="https://www.udemy.com/course/advanced-css-and-sass/" target="_top">Advanced CSS and Sass: Flexbox,
-          Grid, Animations,</a>
+          Grid, Animations</a>,&nbsp;
 
-          <a className="link" href="https://www.udemy.com/the-complete-javascript-course/" target="_top">The Complete JavaScript Course 2020,</a>
+          <a className="link" href="https://www.udemy.com/the-complete-javascript-course/" target="_top">The Complete JavaScript Course 2020</a>,&nbsp;
 
-          <a className="link" href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_top">React - The Complete Guide (incl Hooks, React Router, Redux)</a> and read / watch countless articles and youtube tutorials about Front-end Development. Recently I also obtained <a className="link" href={data.frontmatter.foundations.publicURL} target="_blank" rel="noopener noreferrer">CIW Web Foundations Associate,</a>
-
-          <a className="link" href={data.frontmatter.html.publicURL} target="_blank" rel="noopener noreferrer">CIW Advanced HTML5 and CSS3 Specialist</a> and <a className="link" href={data.frontmatter.js.publicURL} target="_blank" rel="noopener noreferrer">CIW JavaScript Specialist</a> certificates.</p>
+          <a className="link" href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_top">React - The Complete Guide (incl Hooks, React Router, Redux)</a> and read / watch countless articles and youtube tutorials about Front-end Development. Recently I also obtained
+          <a className="link" href={data.frontmatter.foundations.publicURL} target="_blank" rel="noopener noreferrer">CIW Web Foundations Associate</a>,&nbsp;
+          <a className="link" href={data.frontmatter.html.publicURL} target="_blank" rel="noopener noreferrer">CIW Advanced HTML5 and CSS3 Specialist</a>,&nbsp;<a className="link" href={data.frontmatter.js.publicURL} target="_blank" rel="noopener noreferrer">CIW JavaScript Specialist</a> and&nbsp;
+          <a className="link" href={data.frontmatter.user.publicURL} target="_blank" rel="noopener noreferrer">CIW User Interface Designer</a> certificates.</p>
 
           <p className="section__text">{data.frontmatter.extension}</p>
 
@@ -88,6 +89,9 @@ query AboutQuery {
             publicURL
           }
           js {
+            publicURL
+          }
+          user {
             publicURL
           }
         }

@@ -1,5 +1,5 @@
 body {
-  font-family: 'architects daughter';
+  font-family: 'montserrat', sans-serif;
   font-size: $default-font-size;
   background-color: $color-secondary;
   color: $color-secondary--light;
@@ -18,8 +18,9 @@ a:active {
 }
 
 .heading-primary {
-  color: $color-white;
+  font-family: 'architects daughter', cursive;
   font-size: $big-font-size;
+  color: $color-white;
   line-height: 1.7;
   animation: jumpTop .5s ease-out 1s;
   animation-fill-mode: backwards;

@@ -41,8 +41,11 @@
 }
 
 .quote-title,
-.stack-title,
-.activity-title { font-weight: bold; }
+.activity-title,
+.stack-title {
+  font-size: $medium-font-size;
+  font-weight: bold;
+}
 
 .quote {
   color: $color-white;

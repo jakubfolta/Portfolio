@@ -35,6 +35,7 @@
     "react-icons": "^3.10.0",
     "react-transition-group": "^4.4.1",
     "typeface-architects-daughter": "0.0.72",
+    "typeface-montserrat": "0.0.75",
     "typeface-open-sans": "0.0.75"
   },
   "devDependencies": {

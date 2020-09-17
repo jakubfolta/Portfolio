@@ -2,12 +2,13 @@
   padding: 0 2rem;
 
   &__heading {
-  text-align: center;
-  font-size: $big-font-size;
-  letter-spacing: .3rem;
-  text-transform: uppercase;
-  color: $color-white;
-  margin-top: 1rem;
+    font-family: 'architects daughter', cursive;
+    font-size: $huge-font-size;
+    text-align: center;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-top: 1rem;
   }
 
   &__text {

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 import '../styles/sass/main.scss';
 import 'typeface-architects-daughter';
+import 'typeface-montserrat';
 import Menu from '../components/Menu';
 import Backdrop from '../components/Backdrop';
 import NavigationList from '../components/Navigation/NavigationList';
