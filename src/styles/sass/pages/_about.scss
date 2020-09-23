@@ -39,7 +39,13 @@
   &--5::before,
   &--5::after { animation-delay: 7s; }
 
-  &--stack { display: inline; }
+  &--before {
+    &::after { border: none; }
+  }
+
+  &--after {
+    &::before { border: none; }
+  }
 }
 
 .quote-title,

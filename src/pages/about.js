@@ -15,7 +15,7 @@ class About extends Component {
       <Layout title="Folta | Front End Developer">
         <section className="section">
           <h2 className="heading-primary page__heading">About me</h2>
-          <p className="section__text">I'm <span className="highlight highlight--1">Jacob</span>, passionate self-taught <br/><span className="highlight highlight--2">Web / Front-End Developer</span>.</p>
+          <p className="section__text">I'm <span className="highlight highlight--1">Jacob</span>, passionate self-taught <br/><span className="highlight highlight--2 highlight--before">Web</span> / Front-End <span className="highlight highlight--2 highlight--after">Developer.</span></p>
 
           <p className="section__text">In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in <span className="highlight highlight--3">code</span>. From that moment on I started my journey with my new <span className="highlight highlight--4">passion</span>.</p>
 
@@ -28,13 +28,15 @@ class About extends Component {
 
           <p className="section__text">{data.frontmatter.conclusion}</p>
 
-          <p className="section__text quote-title"><span className="highlight highlight--5">My favorite quote</span></p>
+          <p className="section__text quote-title"><span className="highlight highlight--5 highlight--before">My</span> favorite <span className="highlight highlight--5 highlight--after">quote</span></p>
           <blockquote className="quote">{data.frontmatter.quote}</blockquote>
 
           <p className="section__text activity-title"><span className="highlight highlight--5">Current activity</span></p>
           <p className="section__text activity">{data.frontmatter.activity}</p>
 
-          <p className="section__text stack-title"><span className="highlight highlight--5 highlight--stack">My stack of languages / technologies:</span></p>
+          <p className="section__text stack-title">
+          <span className="highlight highlight--5 highlight--before">My</span> stack of languages / <span className="highlight highlight--5 highlight--after">technologies:</span>
+          </p>
           <p className="section__text technologies">{data.frontmatter.stack}</p>
 
           <div className="buttons-container">
