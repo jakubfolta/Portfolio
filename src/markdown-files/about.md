@@ -5,7 +5,7 @@ conclusion: "I know that the best way to learn is to work with real projects in 
 quote: '" Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway. "'
 stack: "HTML5 - CSS3 - JAVASCRIPT – PYTHON3 -
 GIT – SASS – NPM - WEBPACK – BOOTSTRAP - REACTJS - REDUX - CSS MODULES - FIREBASE - GRAPHQL - GATSBY - PHP - MYSQL"
-activity: "At the moment I study the next module in my course which is PHP and MySQL Development. After that, I will create another project for my portfolio which probably be Movie/Game Library. I'm thinking also about adding some cool features to my portfolio page ;)"
+activity: "At the moment I'm putting the finishing touches on my next side project built with React, Redux and Firebase."
 cv: "./files/CV-JakubFolta.pdf"
 foundations: "./files/CIWFoundations.pdf"
 html: "./files/CIWHTML.pdf"
