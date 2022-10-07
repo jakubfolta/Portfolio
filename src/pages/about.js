@@ -15,7 +15,7 @@ class About extends Component {
       <Layout title="Folta | Front End Developer">
         <section className="section">
           <h2 className="heading-primary page__heading">About me</h2>
-          <p className="section__text">I'm <span className="highlight highlight--1">Jacob</span>, passionate self-taught <br/><span className="highlight highlight--2 highlight--before">Web</span> / Front-End <span className="highlight highlight--2 highlight--after">Developer.</span></p>
+          <p className="section__text">I'm <span className="highlight highlight--1">Jacob</span>, passionate self-taught <br/><span className="highlight highlight--2 highlight--before">Software</span> <span className="highlight highlight--2 highlight--after">Engineer.</span></p>
 
           <p className="section__text">In my life I've tried many different professions but never really loved what I was doing. Fortunately, in August 2018 I became interested in <span className="highlight highlight--3">code</span>. From that moment on I started my journey with my new <span className="highlight highlight--4">passion</span>.</p>
 

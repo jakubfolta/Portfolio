@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 
 import SocialsItem from './SocialsItem';
-import { FaFacebookSquare } from 'react-icons/fa';
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
@@ -10,13 +9,6 @@ const SocialsList = () => (
   <Fragment>
     <p className="followMe">Follow me</p>
     <ul className="socials__list">
-      <SocialsItem
-        link="https://www.facebook.com/jakub.folta.58/" color="#3B5998"
-        title="Follow on Facebook"
-        value="Follow on Facebook">
-        <FaFacebookSquare />
-      </SocialsItem>
-
       <SocialsItem
         link="https://github.com/jakubfolta"
         color="#24292e"

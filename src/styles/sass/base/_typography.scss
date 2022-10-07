@@ -36,6 +36,7 @@ a:active {
 .link:link,
 .link:visited {
   display: inline-block;
+  white-space: pre-wrap;
   text-decoration: none;
   color: $color-tertiary;
   border-bottom: 2px solid transparent;
