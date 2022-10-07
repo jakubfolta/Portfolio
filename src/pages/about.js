@@ -26,8 +26,6 @@ class About extends Component {
 
           <p className="section__text">To document my journey I push all my code to <a className="link" href="https://github.com/jakubfolta" target="_blank" rel="noopener noreferrer">Github</a> and publish posts on <a className="link" href="https://www.instagram.com/jakub.folta/" target="_blank" rel="noopener noreferrer">Instagram.</a></p>
 
-          <p className="section__text">{data.frontmatter.conclusion}</p>
-
           <p className="section__text quote-title"><span className="highlight highlight--5 highlight--before">My</span> favorite <span className="highlight highlight--5 highlight--after">quote</span></p>
           <blockquote className="quote">{data.frontmatter.quote}</blockquote>
 
@@ -68,7 +66,6 @@ query AboutQuery {
       node {
         frontmatter {
           extension
-          conclusion
           quote
           stack
           activity
