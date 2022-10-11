@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Folta | Software Engineer',
-    description: `Front End Developer Portfolio`,
+    description: `Software Engineer Portfolio`,
     author: 'Jakub Folta',
     siteUrl: `https://folta.me`
   },
@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
+    'gatsby-plugin-remove-serviceworker',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

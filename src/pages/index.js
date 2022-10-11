@@ -7,7 +7,7 @@ import Socials from '../components/Socials';
 import ArrowRight from '../components/Arrows/ArrowRight';
 
 const HomeIndex = () => (
-  <Layout title="Folta | Front End Developer">
+  <Layout>
     <Logo />
     <Socials />
     <section className="section section--home">
