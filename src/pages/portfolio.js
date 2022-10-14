@@ -7,7 +7,7 @@ import ArrowRight from '../components/Arrows/ArrowRight';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
 
 const Portfolio = () => (
-  <Layout title="Folta - Portfolio | Front End Developer">
+  <Layout title="Folta - Portfolio | Software Engineer">
     <section className="section">
       <h2 className="heading-primary page__heading">My portfolio</h2>
       <ProjectsList />

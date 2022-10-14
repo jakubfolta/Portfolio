@@ -12,7 +12,7 @@ class About extends Component {
     const data = this.props.data.allMarkdownRemark.edges[0].node;
 
     return (
-      <Layout title="Folta | Front End Developer">
+      <Layout title="Folta | Software Engineer">
         <section className="section">
           <h2 className="heading-primary page__heading">About me</h2>
           <p className="section__text">I'm <span className="highlight highlight--1">Jacob</span>, passionate self-taught <br/><span className="highlight highlight--2 highlight--before">Software</span> <span className="highlight highlight--2 highlight--after">Engineer.</span></p>
