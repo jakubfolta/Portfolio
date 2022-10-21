@@ -5,6 +5,9 @@ module.exports = {
     author: 'Jakub Folta',
     siteUrl: `https://folta.me`
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
