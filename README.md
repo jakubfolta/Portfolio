@@ -11,4 +11,4 @@ My portfolio created with React and using Gatsby, a static site generator to mak
 * React, Gatsby, Graphql
 
 ## Contact
-Created by Jakub Folta [@betterlifewisdom](https://www.betterlifewisdom.com/) - feel free to contact me!<br/>
+Created by Jakub Folta [@folta.me](https://www.folta.me/) - feel free to contact me!<br/>
