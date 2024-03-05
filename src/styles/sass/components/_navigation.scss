@@ -50,7 +50,7 @@
     border-bottom: 2px solid transparent;
 
     &:active { border-bottom: 2px solid $color-primary; }
-    &.active { color: $color-white; }
+    &.active { color: $color-white !important;} // Remove important when scrolls page active
 
     @include respond(desktop) {
       width: 50%;

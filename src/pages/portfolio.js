@@ -38,5 +38,5 @@ export const Head = () => {
       <html lang="en" />
       <Seo title="Folta - Portfolio | Software Engineer" />
     </>
-  )
-}
+  );
+};

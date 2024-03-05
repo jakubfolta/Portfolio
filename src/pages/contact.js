@@ -94,7 +94,7 @@ class Contact extends Component {
           page="/portfolio/"
           pageName="Portfolio" />
       </Layout>
-    )
+    );
   }
 };
 
@@ -106,5 +106,5 @@ export const Head = () => {
       <html lang="en" />
       <Seo title="Let's talk | Folta" />
     </>
-  )
-}
+  );
+};

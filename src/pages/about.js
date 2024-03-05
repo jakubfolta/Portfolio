@@ -54,7 +54,7 @@ class About extends Component {
           page="/"
           pageName="Main" />
       </Layout>
-    )
+    );
   }
 };
 
@@ -66,8 +66,8 @@ export const Head = () => {
       <html lang="en" />
       <Seo title="Folta | Software Engineer" />
     </>
-  )
-}
+  );
+};
 
 export const data = graphql`
 query AboutQuery {
@@ -101,4 +101,4 @@ query AboutQuery {
     }
   }
 }
-`
+`;

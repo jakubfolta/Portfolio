@@ -19,7 +19,7 @@ const HomeIndex = () => (
       page="/about/"
       pageName="About" />
   </Layout>
-)
+);
 
 export default HomeIndex;
 
@@ -29,5 +29,5 @@ export const Head = () => {
       <html lang="en" />
       <Seo title="Folta | Software Engineer" />
     </>
-  )
-}
+  );
+};

@@ -26,5 +26,5 @@ export const Head = () => {
       <html lang="en" />
       <Seo title="Thanks - Folta | Software Engineer" />
     </>
-  )
-}
+  );
+};
