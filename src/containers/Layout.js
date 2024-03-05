@@ -6,7 +6,6 @@ import 'typeface-montserrat';
 import Menu from '../components/Menu';
 import Backdrop from '../components/Backdrop';
 import NavigationList from '../components/Navigation/NavigationList';
-import SEO from '../components/SEO';
 
 class Layout extends Component {
   state = {
@@ -21,8 +20,7 @@ class Layout extends Component {
 
   render() {
     return (
-      <Fragment>
-        <SEO title={this.props.title} />
+      <>
         <Backdrop
           show={this.state.menuClicked}
           clicked={this.navVisibilityHandler} />
@@ -33,7 +31,7 @@ class Layout extends Component {
             show={this.state.menuClicked}
             clicked={this.navVisibilityHandler} />
         </main>
-      </Fragment>
+      </>
     )
   }
 };

@@ -1,5 +1,5 @@
 ---
-title: "Better Life Webpage"
+title: "Better life webpage"
 image: "images/betterlife.png"
 technologies: ["HTML5", "CSS3", "SASS"]
 github: "https://github.com/jakubfolta/Webpage-BetterLife"

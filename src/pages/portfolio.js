@@ -25,3 +25,12 @@ const Portfolio = () => (
 );
 
 export default Portfolio;
+
+export const Head = () => {
+  return (
+    <>
+      <html lang="en" />
+      <Seo title="Folta - Portfolio | Software Engineer" />
+    </>
+  )
+}

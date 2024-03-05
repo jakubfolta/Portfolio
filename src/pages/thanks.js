@@ -16,3 +16,12 @@ const Thanks = () => (
 );
 
 export default Thanks;
+
+export const Head = () => {
+  return (
+    <>
+      <html lang="en" />
+      <Seo title="Thanks - Folta | Software Engineer" />
+    </>
+  )
+}

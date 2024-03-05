@@ -11,11 +11,11 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-transition-link`,
     'gatsby-plugin-remove-serviceworker',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -29,7 +29,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-offline`,
-    'gatsby-plugin-preload-link-crossorigin',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

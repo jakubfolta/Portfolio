@@ -57,6 +57,15 @@ class About extends Component {
 
 export default About;
 
+export const Head = () => {
+  return (
+    <>
+      <html lang="en" />
+      <Seo title="Folta | Software Engineer" />
+    </>
+  )
+}
+
 export const data = graphql`
 query AboutQuery {
   allMarkdownRemark (
@@ -90,9 +99,3 @@ query AboutQuery {
   }
 }
 `
-
-
-
-
-
-

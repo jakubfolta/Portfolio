@@ -1,5 +1,5 @@
 ---
-title: "Yatsu Webpage"
+title: "Yatsu webpage"
 image: "images/yatsu.png"
 technologies: ["HTML5", "CSS3", "SASS", "FLEXBOX"]
 github: "https://github.com/jakubfolta/Webpage-Yatsu"

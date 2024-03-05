@@ -93,3 +93,12 @@ class Contact extends Component {
 };
 
 export default Contact;
+
+export const Head = () => {
+  return (
+    <>
+      <html lang="en" />
+      <Seo title="Let's talk | Folta" />
+    </>
+  )
+}

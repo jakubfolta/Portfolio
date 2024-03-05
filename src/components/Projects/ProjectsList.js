@@ -7,8 +7,8 @@ const ProjectsList = () => {
   const data = useStaticQuery(
     graphql`
       query ProjectsQuery {
-        allMarkdownRemark (
-          sort: {fields: frontmatter___number, order: DESC},
+        allMarkdownRemark(
+          sort: {frontmatter: {number: DESC}}
           filter: {fileAbsolutePath: {regex: "/project/"}}
         ) {
           edges {
@@ -22,10 +22,7 @@ const ProjectsList = () => {
                 demo
                 image {
                   childImageSharp {
-                    fluid (maxWidth: 800, quality: 100){
-                      ...GatsbyImageSharpFluid
-                      ...GatsbyImageSharpFluidLimitPresentationSize
-                    }
+                    gatsbyImageData(layout: FULL_WIDTH)
                   }
                 }
               }

@@ -5,9 +5,10 @@ import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
 import Socials from '../components/Socials';
 import ArrowRight from '../components/Arrows/ArrowRight';
+import { Seo } from '../components/Seo';
 
 const HomeIndex = () => (
-  <Layout title={"Folta | Software Engineer"}>
+  <Layout>
     <Logo />
     <Socials />
     <section className="section section--home">
@@ -21,3 +22,12 @@ const HomeIndex = () => (
 )
 
 export default HomeIndex;
+
+export const Head = () => {
+  return (
+    <>
+      <html lang="en" />
+      <Seo title="Folta | Software Engineer" />
+    </>
+  )
+}
