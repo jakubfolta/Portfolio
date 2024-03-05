@@ -18,6 +18,9 @@ const Portfolio = () => (
     <Footer
       title="Let's chat"
       text="Wanna contact me or chat about a project? Feel free to drop me an email at" />
+    {/* <ArrowRight
+      page="/scrolls/"
+      pageName="Scrolls" /> */}
     <ArrowRight
       page="/contact/"
       pageName="Contact" />

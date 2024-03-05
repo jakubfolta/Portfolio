@@ -42,14 +42,14 @@
     }
   }
 
+  &__description-container {
+    @include respond(desktop) { margin-left: 3rem;  }
+  }
+
   &__description-text {
     padding: 0 2rem;
 
-    @include respond(desktop) {
-      font-size: $small-font-size;
-      margin-left: 3rem;
-    }
-
+    @include respond(desktop) { font-size: $small-font-size;  }
     @include respond(big-desktop) { font-size: $default-font-size; }
   }
 

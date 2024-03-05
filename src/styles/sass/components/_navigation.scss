@@ -24,14 +24,15 @@
     transition: transform ease .3s;
 
     &:first-child,
+    &:last-child,
     &:nth-child(odd) { transform: translateX(-100%); }
 
-    &:last-child,
     &:nth-child(even) { transform: translateX(100%); }
 
-    &:nth-child(even) { transition-delay: .9s; }
-    &:nth-child(odd) { transition-delay: .6s; }
-    &:first-child { transition-delay: 1.2s; }
+    &:nth-child(even) { transition-delay: 1.2s; }
+    &:nth-child(odd) { transition-delay: .9s; }
+    &:nth-child(4) { transition-delay: .6s; }
+    &:first-child { transition-delay: 1.5s; }
     &:last-child { transition-delay: .3s; }
 
     @include respond(desktop) {
@@ -66,8 +67,9 @@
 
   &:nth-child(even) { transition-delay: .8s; }
   &:nth-child(odd) { transition-delay: 1.1s; }
+  &:nth-child(4) { transition-delay: 1.4s; }
   &:first-child { transition-delay: .5s; }
-  &:last-child { transition-delay: 1.4s; }
+  &:last-child { transition-delay: 1.7s; }
 }
 
 

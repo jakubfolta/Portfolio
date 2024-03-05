@@ -9,6 +9,7 @@ const NavigationItem = props => (
       duration={.5}
       to={props.link}
       activeClassName="active"
+      style={{pointerEvents: props.link === "/scrolls/" ? 'none' : 'auto', color: props.link === "/scrolls/" ? '#919191' : '#00E82B'}}
       className="navigation__link">{props.children}</AniLink>
   </li>
 );

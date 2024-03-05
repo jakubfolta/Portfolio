@@ -87,6 +87,9 @@ class Contact extends Component {
             onFocus={e => this.onFocusHandler(e)}
             formIsValid={this.state.validForm} />
         </section>
+        {/* <ArrowLeft
+          page="/scrolls/"
+          pageName="Scrolls" /> */}
         <ArrowLeft
           page="/portfolio/"
           pageName="Portfolio" />
