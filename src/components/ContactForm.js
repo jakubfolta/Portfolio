@@ -71,7 +71,7 @@ const ContactForm = props => {
         value="Send"
         disabled={!props.formIsValid} />
     </form>
-  )
+  );
 };
 
 export default ContactForm;
