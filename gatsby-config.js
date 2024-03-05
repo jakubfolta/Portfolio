@@ -1,3 +1,6 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
     title: 'Folta | Software Engineer',
@@ -8,14 +11,7 @@ module.exports = {
   flags: {
     DEV_SSR: true
   },
-  plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-transition-link`,
-    'gatsby-plugin-remove-serviceworker',
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-plugin-transition-link", 
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -28,7 +24,7 @@ module.exports = {
         icon: `src/assets/logo.png`,
       }
     },
-    `gatsby-plugin-offline`,
+    "gatsby-plugin-offline", "gatsby-plugin-remove-serviceworker", "gatsby-transformer-remark", "gatsby-transformer-sharp", 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -44,4 +40,4 @@ module.exports = {
       }
     }
   ]
-}
+};

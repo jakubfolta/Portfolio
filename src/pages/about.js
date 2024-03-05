@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { FaReadme } from 'react-icons/fa';
 import ArrowRight from '../components/Arrows/ArrowRight';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
-import { Seo } from '../components/Seo';
+import { Seo } from '../components/SEO';
 import Logo from '../components/Logo';
 
 class About extends Component {

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../containers/Layout';
 import { Link } from 'gatsby';
-import { Seo } from '../components/Seo';
+import { Seo } from '../components/SEO';
 import Logo from '../components/Logo';
 
 const Thanks = () => (

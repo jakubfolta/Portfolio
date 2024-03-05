@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Layout from '../containers/Layout';
 import ContactForm from '../components/ContactForm';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
-import { Seo } from '../components/Seo';
+import { Seo } from '../components/SEO';
 import Logo from '../components/Logo';
 
 class Contact extends Component {

@@ -5,7 +5,7 @@ import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
 import Socials from '../components/Socials';
 import ArrowRight from '../components/Arrows/ArrowRight';
-import { Seo } from '../components/Seo';
+import { Seo } from '../components/SEO';
 
 const HomeIndex = () => (
   <Layout>
