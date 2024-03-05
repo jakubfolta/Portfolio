@@ -35,13 +35,13 @@ const ProjectsList = () => {
 
   const projects = data.allMarkdownRemark.edges.map(project =>
     <ProjectItem
-     key={project.node.id}
-     title={project.node.frontmatter.title}
-     description={project.node.excerpt}
-     image={project.node.frontmatter.image.childImageSharp.fluid}
-     technologies={project.node.frontmatter.technologies}
-     githublink={project.node.frontmatter.github}
-     visitlink={project.node.frontmatter.demo} /> )
+      key={project.node.id}
+      title={project.node.frontmatter.title}
+      description={project.node.excerpt}
+      image={project.node.frontmatter.image.childImageSharp.gatsbyImageData}
+      technologies={project.node.frontmatter.technologies}
+      githublink={project.node.frontmatter.github}
+      visitlink={project.node.frontmatter.demo} /> )
 
   return (
     <Fragment>

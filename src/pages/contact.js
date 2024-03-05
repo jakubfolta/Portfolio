@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Layout from '../containers/Layout';
 import ContactForm from '../components/ContactForm';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
+import { Seo } from '../components/Seo';
+import Logo from '../components/Logo';
 
 class Contact extends Component {
   state = {
@@ -71,7 +73,8 @@ class Contact extends Component {
     const form = this.state.form;
 
     return (
-      <Layout title="Let's talk | Folta">
+      <Layout>
+        <Logo hidden={true} />
         <section className="section section--contact">
           <h2 className="heading-primary page__heading">So, let's talk ;)</h2>
           <p className="section__text">Either you want to ask me about something or just to get my attention, fill up this complicated form below or simply send me an email to <a className="link" href="mailto:jakubfolta@yahoo.co.uk" target="_top">jakubfolta@yahoo.co.uk</a>.</p>

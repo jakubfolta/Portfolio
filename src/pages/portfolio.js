@@ -5,9 +5,12 @@ import ProjectsList from '../components/Projects/ProjectsList';
 import Footer from '../components/Footer';
 import ArrowRight from '../components/Arrows/ArrowRight';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
+import { Seo } from '../components/Seo';
+import Logo from '../components/Logo';
 
 const Portfolio = () => (
-  <Layout title="Folta - Portfolio | Software Engineer">
+  <Layout>
+    <Logo hidden={true} />
     <section className="section">
       <h2 className="heading-primary page__heading">My portfolio</h2>
       <ProjectsList />

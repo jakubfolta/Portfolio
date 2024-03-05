@@ -1,5 +1,5 @@
 .logo__container {
-  position: absolute;
+  position: fixed;
   top: 3%;
   left: 5%;
   width: 5rem;
@@ -10,6 +10,12 @@
   @include respond(desktop) {
     top: 3%;
     left: 2%;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media only screen and (min-width: 43.75em) { display: block; }
   }
 }
 
