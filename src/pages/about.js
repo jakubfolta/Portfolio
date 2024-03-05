@@ -37,8 +37,8 @@ class About extends Component {
 
           <p className="section__text certificates-title"><span className="highlight highlight--5">AWS certificates</span></p>
           <p className="section__text">
-            <a className="link" href="https://www.credly.com/badges/329a3be7-10e7-4702-9682-ea97df13e983/linked_in_profile" target="_top">AWS Certified Cloud Practitioner</a>
-            <a className="link" href="https://www.credly.com/badges/30f7cffd-2a07-4b31-b800-dd1b16c2417a/linked_in_profile" target="_top">AWS Certified Solutions Architect – Associate</a>
+            <a className="link" href="https://www.credly.com/badges/329a3be7-10e7-4702-9682-ea97df13e983/linked_in_profile" target="_top">AWS Certified Cloud Practitioner</a><br/>
+            <a className="link" href="https://www.credly.com/badges/30f7cffd-2a07-4b31-b800-dd1b16c2417a/linked_in_profile" target="_top">AWS Certified Solutions Architect – Associate</a><br/>
             <a className="link" href="https://www.credly.com/badges/4958ba51-e270-4482-8785-3de997342dfc/public_url" target="_top">AWS Certified Developer – Associate</a>
           </p>
 
