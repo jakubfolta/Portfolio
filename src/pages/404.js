@@ -1,6 +1,7 @@
 import * as React from "react";
-import { Link } from "gatsby";
+
 import Layout from '../containers/Layout';
+import { Link } from "gatsby";
 import { Seo } from '../components/SEO';
 
 const codeStyles = {

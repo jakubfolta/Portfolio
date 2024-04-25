@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 import Layout from '../containers/Layout';
+import Logo from '../components/Logo';
 import ContactForm from '../components/ContactForm';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
 import { Seo } from '../components/SEO';
-import Logo from '../components/Logo';
 
 class Contact extends Component {
   state = {
@@ -75,7 +75,7 @@ class Contact extends Component {
     return (
       <Layout>
         <Logo hidden={true} />
-        <section className="section section--contact">
+        <section className="section">
           <h2 className="heading-primary page__heading">So, let's talk ;)</h2>
           <p className="section__text">Either you want to ask me about something or just to get my attention, fill up this complicated form below or simply send me an email to <a className="link" href="mailto:jakubfolta@yahoo.co.uk" target="_top">jakubfolta@yahoo.co.uk</a>.</p>
           <ContactForm
@@ -87,12 +87,9 @@ class Contact extends Component {
             onFocus={e => this.onFocusHandler(e)}
             formIsValid={this.state.validForm} />
         </section>
-        {/* <ArrowLeft
-          page="/scrolls/"
-          pageName="Scrolls" /> */}
         <ArrowLeft
-          page="/portfolio/"
-          pageName="Portfolio" />
+          page="/scrolls/"
+          pageName="Scrolls" />
       </Layout>
     );
   }

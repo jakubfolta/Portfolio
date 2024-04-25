@@ -3,7 +3,7 @@ import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { FaGithub } from 'react-icons/fa';
 import { FaLink } from 'react-icons/fa';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
+// import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const ProjectItem = props => (
   <li className="projects__item">

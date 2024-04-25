@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../containers/Layout';
-import Footer from '../components/Footer';
+import Logo from '../components/Logo';
 import { FaReadme } from 'react-icons/fa';
+import Footer from '../components/Footer';
 import ArrowRight from '../components/Arrows/ArrowRight';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
 import { Seo } from '../components/SEO';
-import Logo from '../components/Logo';
 
 class About extends Component {
   render() {

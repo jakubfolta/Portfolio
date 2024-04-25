@@ -2,38 +2,38 @@ import React from 'react';
 
 import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
-import ProjectsList from '../components/Projects/ProjectsList';
+import ScrollsList from '../components/Scrolls/ScrollsList';
 import Footer from '../components/Footer';
 import ArrowRight from '../components/Arrows/ArrowRight';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
 import { Seo } from '../components/SEO';
 
-const Portfolio = () => (
+const Scrolls = () => (
   <Layout>
     <Logo hidden={true} />
     <section className="section">
-      <h2 className="heading-primary page__heading">My portfolio</h2>
-      <ProjectsList />
+      <h2 className="heading-primary page__heading">Scrolls</h2>
+      <ScrollsList />
     </section>
     <Footer
       title="Let's chat"
       text="Wanna contact me or chat about a project? Feel free to drop me an email at" />
     <ArrowRight
-      page="/scrolls/"
-      pageName="Scrolls" />
+      page="/contact/"
+      pageName="Contact" />
     <ArrowLeft
-      page="/about/"
-      pageName="About" />
+      page="/portfolio/"
+      pageName="Portfolio" />
   </Layout>
 );
 
-export default Portfolio;
+export default Scrolls;
 
 export const Head = () => {
   return (
     <>
       <html lang="en" />
-      <Seo title="Folta - Portfolio | Software Engineer" />
+      <Seo title="Folta - Scrolls | Software Engineer" />
     </>
-  );
-};
+  )
+}

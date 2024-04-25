@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Layout from '../containers/Layout';
+import Logo from '../components/Logo';
 import { Link } from 'gatsby';
 import { Seo } from '../components/SEO';
-import Logo from '../components/Logo';
 
 const Thanks = () => (
   <Layout>

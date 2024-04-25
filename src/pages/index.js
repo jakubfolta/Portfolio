@@ -1,9 +1,9 @@
 import React from 'react';
 
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
 import Socials from '../components/Socials';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import ArrowRight from '../components/Arrows/ArrowRight';
 import { Seo } from '../components/SEO';
 
