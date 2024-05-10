@@ -3,7 +3,7 @@ import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { FaGithub } from 'react-icons/fa';
 import { FaLink } from 'react-icons/fa';
-// import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const ProjectItem = props => (
   <li className="projects__item">
@@ -14,14 +14,12 @@ const ProjectItem = props => (
           ? <a href={props.visitlink} alt="Demo" target="_blank" rel="noopener noreferrer">
               <GatsbyImage className="projects__image" image={props.image} alt="Screenshot of project" />
             </a>
-          : <GatsbyImage className="projects__image" image={props.image} alt="Screenshot of project" />
-          
-          // <AniLink
-          //   fade
-          //   duration={.5}
-          //   to={props.visitlink}>
-          //   <GatsbyImage className="projects__image" image={props.image} alt="Screenshot of project" />
-          // </AniLink>
+          : <AniLink
+            fade
+            duration={.5}
+            to={props.visitlink}>
+            <GatsbyImage className="projects__image" image={props.image} alt="Screenshot of project" />
+          </AniLink>
         }
       </div>
 
@@ -35,19 +33,13 @@ const ProjectItem = props => (
                 <a className="button" href={props.githublink} alt="Source code" target="_blank" rel="noopener noreferrer"><FaGithub /><span>Source</span></a>
                 <a className="button" href={props.visitlink} alt="Demo" target="_blank" rel="noopener noreferrer"><FaLink /><span>Visit</span></a>
               </>
-            : <a
-                href='/'
-                style={{pointerEvents: 'none'}}
+            : <AniLink
+                fade
+                duration={.5}
+                to={props.visitlink}
                 className="button">
-                <FaLink /><span>Visit - soon...</span>
-              </a>
-            // <AniLink
-            //   fade
-            //   duration={.5}
-            //   to={props.visitlink}
-            //   className="button">
-            //   <FaLink /><span>Visit</span>
-            // </AniLink>
+                <FaLink /><span>Visit</span>
+              </AniLink>
           }
         </div>
       </div>

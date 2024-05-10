@@ -40,3 +40,145 @@
     }
   }
 }
+
+.scroll {
+  width: 100%;
+
+  &__heading-container {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+
+  &__main-heading {
+    margin-bottom: 1rem;
+    color: $color-white;
+    font-size: $huge-font-size;
+
+    @include respond(tab-port) { margin-top: 3rem; }
+  }
+
+  &__written {
+    font-family: 'architects daughter', cursive;
+    letter-spacing: 1px;
+  }
+
+  &__author {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: $color-secondary--light !important;
+  }
+
+  &__content {
+    width: 100%;
+    margin-bottom: 3rem;
+  
+    @include respond(desktop) { margin-bottom: 5rem; }
+    
+    & p:first-child { box-shadow: 0px 0px 30px $color-black; }
+    & p:not(:last-child) { margin-bottom: 2rem; }
+  }
+
+  & h4 { text-align: left; }
+  & p {
+    text-align: left;
+    
+    &:has(span[disclaimer]) {
+      text-align: center;
+      padding: 10px 20px;
+      border: 2px solid;
+      border-radius: 10px;
+      box-shadow: 3px 3px 10px;
+    
+      & span {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  &__link,
+  & a:not(:has(span)) {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: $color-tertiary;
+
+    &:hover { border-bottom-width: 2px; }
+  }
+
+  &__subheading {
+    font-size: $medium-font-size;
+    margin-bottom: 1rem;
+    text-align: left;
+
+    &--section {
+      margin-bottom: 2.2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  & ul {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    list-style: none;
+    text-align: left;
+  }
+
+  & pre {
+    text-align: left;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: $color-code;
+    color: $color-white;
+    font-size: $small-font-size;
+    border-radius: 10px;
+  }
+
+  &__author {
+    &--container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 3rem;
+
+      @include respond(desktop) { margin-bottom: 5rem; }
+    }
+
+    &--heading {
+      align-self: flex-start;
+      padding-bottom: 2rem;
+      margin-bottom: 3rem;
+      font-size: $small-font-size;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 3px;
+      border-bottom: .1px solid;
+    }
+
+    &--description {
+      font-size: $small-font-size-2;
+      margin-bottom: 3rem;
+
+      & span {
+        font-family: 'architects daughter', cursive;
+        letter-spacing: 2px;
+        color: $color-tertiary;
+      }
+    }
+  }
+}
+
+#learn-more {
+  align-self: flex-start;
+  font-size: $small-font-size-2;
+  color: $color-secondary--light;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom-color: $color-secondary--light;
+  }
+}

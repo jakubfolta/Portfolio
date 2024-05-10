@@ -17,7 +17,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const scrollTemplate = path.resolve(`./src/templates/scroll.js`);
+  const scrollTemplate = path.resolve(`./src/templates/scroll-post.js`);
   const result = await graphql(`
     query {
       allMarkdownRemark (filter: {fileAbsolutePath: {regex: "/scrolls/"}}) {

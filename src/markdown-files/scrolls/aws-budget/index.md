@@ -1,37 +1,38 @@
 ---
-title: "Create budget on AWS"
-description: "In the search bar at the top type budget and select AWS Budgets. On the next page select Create budget. Now as a Budget setup select Use"
-image: "./screenshots/hello.png"
+title: "Create a Budget on AWS"
+description: "With AWS Budgets, you have the ability to set custom budgets for your organization's AWS costs and usage. This allows you to keep track of your spending and usage in real-time."
+image: "./screenshots/aws-budgets.png"
 # date: 2020-07-15
-order: 1
+order: 2
 ---
-Lorem ipsum.f,djfkljekljlsk.
+![AWS budget](./screenshots/aws-budgets.png)
 
-<strong> I am strongddd</strong>
-- This however showed weasel
-- Well uncritical so misled
-- this is very interesting
-- Goodness much until that fluid owl
-<blockquote>
-This is my first post on my new fake blog! How exciting!
-I'm sure I'll write a lot more interesting things in the future.
-Oh, and here's a great quote from this Wikipedia on
-</blockquote>
+With **AWS Budgets**, you have the ability to set custom budgets for your organization's AWS costs and usage. This allows you to keep track of your spending and usage in real-time. Additionally, you can configure alerts to be sent to you via email or SNS notifications if you exceed your budget threshold. These alerts will help you respond quickly and take the necessary actions to stay within your budget, ensuring that your AWS costs remain under control.
 
-const saltyDuckEgg = "chinese preserved food product"
-1. fdsf
-2.feijfs
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+This will be really a quick one so let's get this party started ;)
 
-You can also write code blocks here!
+#### AWS Budgets Setup
 
+To set up a monthly budget for your AWS usage go to the search bar at the top, type <q>budget</q> and select **AWS Budgets** from the options.
 
+![Select budget](./screenshots/step-1.png)
 
-```js
-const saltyDuckEgg = "chinese preserved food product"
+On the next page click **Create budget** to go to the configuration page. Under Budget setup select **Use a template (simplified)**, and choose **Monthly cost budget** from the Templates section. Enter a name for your budget, the budget amount you want to set, and your email so you can receive notifications about your spendings.
+
+![Select budget setup](./screenshots/step-2.png)
+
+![Choose monthly cost budget](./screenshots/step-3.png)
+
+Click on **Create budget** to complete the setup process.
+
+AWS services have many settings that you can adjust to your needs, but this is the quickest way to get started with budget control. 
+
+Now, by selecting **Home** from the left-hand menu you can see what are your actual costs.
+
+![Get to the billing dashboard](./screenshots/step-4.png)
+
+To view which AWS services and actions are responsible for your costs, select **Bills** from the left-hand menu and scroll down. This way, you can stay in control and make changes as needed.
+
+![Target services triggering costs](./screenshots/step-5.png)
+
+Thanks for reading! Hope you like it ;)
