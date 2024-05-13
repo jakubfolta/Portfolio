@@ -27,8 +27,8 @@ const ScrollPost = ({ data }) => {
       }
     };
 
-    document.addEventListener('scroll', handleScroll);
-    return () => document.removeEventListener('scroll', handleScroll);
+    document.addEventListener('scrollend', handleScroll);
+    return () => document.removeEventListener('scrollend', handleScroll);
   }, []);
 
   return (
