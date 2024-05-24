@@ -350,17 +350,17 @@ To make it easier to identify instances created by ASG, add a **tag**. Click **N
 
 #### Simple Notification Service
 
-Let's check if everything is working correctly. To do this, we need to inspect the **Simple Notification Service (SNS)**.
+Let's check if everything is working correctly. First, we need to inspect the **Simple Notification Service (SNS)**.
 
 Amazon Simple Notification Service (SNS) is a managed service that delivers messages from **publishers** to **subscribers**, also known as **producers** and **consumers**. Publishers communicate asynchronously by sending messages on a topic that serves as a logical access point and communication route for subscribers.
 
-To check SNS, search for <q>sns</q> in the search bar, then select **Topics** from the menu. Click on our topic to see that our subscription to this topic requires confirmation. Confirm it by clicking on the link inside the AWS email. After refreshing the **Topic** page, we should see that our subscription is confirmed.
+Type <q>sns</q> in the search bar and select appropriate service, then select **Topics** from the menu. Click on our topic to see that our subscription to this topic requires confirmation. Confirm it by clicking on the link inside the AWS email. After refreshing our topic page, we should see that our subscription is confirmed.
 
 ![SNS](./screenshots/step-80.png)
 
 ![SNS](./screenshots/step-81.png)
 
-To ensure that our Auto Scaling Group (ASG) is working correctly, let's terminate three instances. Go back to **EC2 service** page, click on the **Instances**, select three instances, click on the **Instance state** at the top and select **Terminate instance**. After a few minutes, we should see that a new instance was created. We can also check our **ASG** activity by selecting our ASG and clicking on the **Activity** tab. Additionally, we should receive an email informing us about ASG activity.
+To ensure that our Auto Scaling Group (ASG) is properly configured, let's terminate three instances. Go back to **EC2 service** page, click on the **Instances**, select three instances, click on the **Instance state** at the top and select **Terminate instance**. After a few minutes, we should see that a new instance was created. We can also check our **ASG** activity by selecting our ASG and clicking on the **Activity** tab. Additionally, we should receive an email informing us about ASG activity.
 
 ![ASG activity](./screenshots/step-82.png)
 
