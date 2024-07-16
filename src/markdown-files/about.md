@@ -2,9 +2,8 @@
 extension: "After going through new courses I create new projects to solidify my knowledge and get experience. My daily habit is to
 read at least one new article and watch video on youtube related to programming."
 quote: '" Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway. "'
-stack: "HTML5 - CSS3 - JAVASCRIPT – PYTHON3 -
-GIT – SASS - REACTJS - REDUX - CSS MODULES - FIREBASE - NODEJS - GRAPHQL - DJANGO - VUE2 - TAILWIND CSS"
-activity: "Recently, I finished creating a website for a private nursery client and am now writing AWS tutorials / articles."
+stack: "NEXTJS - DJANGO - REACT - REDUX - PYTHON3 - VUE - TAILWIND CSS - NODEJS - HTML5 - CSS3 - JAVASCRIPT - GIT"
+activity: "Recently, I completed developing a website for a private nursery client and I am currently taking courses to enhance my proficiency in backend development, focusing on databases, APIs, Docker, and Kubernetes."
 cv: "./files/CV-JakubFolta.pdf"
 foundations: "./files/CIWFoundations.pdf"
 html: "./files/CIWHTML.pdf"
