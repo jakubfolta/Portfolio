@@ -1,7 +1,7 @@
 ---
 title: "Wantaki"
 image: "images/wantaki.png"
-technologies: ["React", "Redux", "Firebase"]
+technologies: ["React", "Redux", "REST", "Firebase"]
 github: "https://github.com/jakubfolta/Wantaki"
 demo: "https://whatuwant.netlify.app"
 number: 6
