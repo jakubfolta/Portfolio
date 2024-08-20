@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../containers/Layout';
 import Logo from '../components/Logo';
-import { FaReadme } from 'react-icons/fa';
+// import { FaReadme } from 'react-icons/fa';
 import Footer from '../components/Footer';
 import ArrowRight from '../components/Arrows/ArrowRight';
 import ArrowLeft from '../components/Arrows/ArrowLeft';
@@ -51,7 +51,7 @@ class About extends Component {
           <p className="section__text technologies">{data.frontmatter.stack}</p>
 
           <div className="buttons-container">
-            <a className="button" href={data.frontmatter.cv.publicURL} target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a>
+            {/* <a className="button" href={data.frontmatter.cv.publicURL} target="_blank" rel="noopener noreferrer"><FaReadme /><span>Resume</span></a> */}
           </div>
         </section>
         <Footer
